@@ -1,10 +1,11 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import favicon from 'vite-plugin-favicons-inject';
 import solidPlugin from 'vite-plugin-solid';
 import unocss from '@unocss/vite';
 import presetIcons from '@unocss/preset-icons';
 import transformerDirective from '@unocss/transformer-directives'
-import unocssPresetWrapp from "./submodules/unocss-preset";
+import unocssPresetWindblade from "./submodules/unocss-preset";
 
 export default defineConfig({
   base: "./",
@@ -17,11 +18,24 @@ export default defineConfig({
   },
 
   plugins: [
+    favicon(
+      './src/assets/logo.png',
+      {
+        icons: {
+          favicons: true,
+          android: false,
+          appleIcon: false,
+          appleStartup: false,
+          yandex: false,
+          windows: false,
+        },
+      }
+    ),
     solidPlugin(),
     unocss({
       presets: [
         presetIcons(),
-        unocssPresetWrapp(),
+        unocssPresetWindblade(),
       ],
       transformers: [
         transformerDirective(),
