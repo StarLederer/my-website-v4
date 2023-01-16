@@ -1,0 +1,61 @@
+.root {
+  @apply flex flex-col gap-s.2;
+
+  & .imageBg {
+    @apply overflow-hidden round-s height-full min-height-l.2 relative flex justify-center items-center pd-s;
+
+    & img {
+      display: block;
+      /* width: auto; */
+      max-width: auto;
+      height: auto;
+      @apply max-height-full max-width-full round-s.5 transition;
+    }
+
+    &.isFull {
+      padding: 0;
+
+      & img {
+        @apply height-full width-full;
+        object-fit: cover;
+      }
+    }
+
+    & .overlay {
+      @apply flex flex-col absolute inset-0 gap-s.5 pd-(s) transition theme-dark bg-abs;
+      flex: 1;
+      justify-content: end;
+      background: linear-gradient(transparent, black);
+      opacity: 0;
+
+      & .name {
+        @apply font-bold text-fg-0;
+      }
+
+      & p {
+        @apply font-semibold text-fg-0;
+        max-width: 50%;
+      }
+    }
+  }
+
+  & .info {
+    @apply flex gap-s.5 items-center;
+  }
+
+  &.isHero,
+  &:hover {
+    & .imageBg {
+      & .overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.isHero {
+    & .imageBg {
+      @apply height-l.4;
+
+    }
+  }
+}
