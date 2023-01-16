@@ -2,23 +2,20 @@
   font-family: 'Assistant', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+.bg-blur {
+  backdrop-filter: blur(1rem);
+}
+
 .font-fancy {
   font-family: 'Yeseva One', cursive;
 }
 
 body {
   height: 100vh;
-}
-
-body,
-header,
-main,
-section,
-div,
-ul,
-ol {
-  display: flex;
-  flex-direction: column;
 }
 
 .animate-in,
