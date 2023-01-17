@@ -25,8 +25,8 @@ const OverviewFeature: Component<{
           <Overlay>
             <OverlayInfo />
             <div class="flex gap-s.2">
-              <Button class="pd-s round-s bg-blur" style="solid">Celebrate<div class="i-mdi-party-popper" /></Button>
-              <Link class="pd-s round-s bg-blur" style="half" href={props.entry.project.homepageUrl}>View<div class="i-mdi-open-in-new" /></Link>
+              {/* <Button class="pd-s round-s bg-blur" style="solid">Celebrate<div class="i-mdi-party-popper" /></Button> */}
+              <Link class="pd-s round-s bg-blur" style="solid" href={props.entry.project.homepageUrl}>View<div class="i-mdi-open-in-new" /></Link>
             </div>
           </Overlay>
         </Card>
