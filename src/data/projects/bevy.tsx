@@ -1,5 +1,5 @@
 import { Project } from "./types";
-import logo from "./logos/bevy";
+import Logo from "./logos/bevy";
 import featureMain from "./featureImages/bevyBloom/main.png";
 import featureSlight from "./featureImages/bevyBloom/slight.png";
 import featureBlur1 from "./featureImages/bevyBloom/blur1.png";
@@ -8,7 +8,7 @@ import featureBlur2 from "./featureImages/bevyBloom/blur2.png";
 const project: Project = {
   name: "Bevy",
   description: "A refreshingly simple data-driven game engine.",
-  logo: logo,
+  logo: Logo,
   sourceCodeUrl: "https://github.com/bevyengine/bevy",
   homepageUrl: "https://bevyengine.org/",
   role: "occasional contributor",
@@ -43,18 +43,18 @@ const project: Project = {
         ],
         achievements: [
           {
-            icon: <div class="i-simple-icons-bevy" />,
+            icon: <Logo class="width-s"/>,
             type: "Learned",
             title: "Post-processing in Bevy",
-            description: "TODO",
-            viewUrl: "TODO",
+            description: "Post-processing is a critical step in making any image look production-ready. I have implemented post-processing in other engines before; Bevy is the newest addition to the collection.",
+            viewUrl: "https://bevyengine.org/news/bevy-0-9/",
           },
           {
-            icon: <div class="i-simple-icons-bevy" />,
+            icon: <Logo class="width-s"/>,
             type: "Learned",
             title: "Rendering in Bevy",
-            description: "TODO",
-            viewUrl: "TODO",
+            description: "Bevy rendering is an innovative and well-architected way that takes the most advantage of their ECS design. With this skill under my belt, I can build very high-performance renderers on top of the Bevy engine.",
+            viewUrl: "https://bevy-cheatbook.github.io/gpu/intro.html",
           },
           {
             icon: <div class="i-simple-icons-github" />,
@@ -64,7 +64,7 @@ const project: Project = {
             viewUrl: "https://github.com/bevyengine/bevy/pull/6677/",
           },
           {
-            icon: <div class="i-simple-icons-bevy" />,
+            icon: <div class="i-mdi-lightbulb-on-outline" />,
             type: "Developed",
             title: "Parametric blend function",
             description: "This function allows developers to control the effect better than other known methods and even lets them use bloom as a blur filter.",
