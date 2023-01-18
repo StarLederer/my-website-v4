@@ -17,7 +17,7 @@ const Nav: Component<{
   const topLevels = () => getDatabase().filter((entry) => !!entry.project.story && entry.id !== props.currentEntryId);
 
   return (
-    <nav class="grid grid-auto-fit-l.2 gap-s text-s">
+    <nav class="grid grid-auto-fit-l.2 gap-s.4 text-s">
       <For each={topLevels()}>
         {(entry) => (
           <Feature
@@ -32,7 +32,7 @@ const Nav: Component<{
                   <FeatureCTA entry={entry} style="solid" />
                 </Overlay>
               </Card>
-              {/* <Info /> */}
+              <Info />
             </Root>
           )}
         />

@@ -98,7 +98,7 @@ const Main: Component = () => {
           subtitle=""
         />
         <Container>
-          <div class="gap-s grid grid-auto-fit-l.4">
+          <div class="gap-s.4 grid grid-auto-fit-l.4">
             <For each={featuredEntries().others}>
               {(entry) => (
                 <Feature
