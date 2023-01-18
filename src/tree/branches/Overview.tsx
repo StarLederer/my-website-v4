@@ -61,11 +61,17 @@ const Main: Component<IMainProps> = (props) => {
           <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
         </div>
         <p>Innovator, open-source enthusiast, UX/DX perfectionist.</p>
+        {/* <div class="flex bg-srf items-center gap-s pd-s round-m.2">
+          <div>Want to support?</div>
+          <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
+        </div> */}
       </header>
 
       <div class="flex flex-col gap-m pd-be-m width-full">
         <section>
           <BigTitle
+            // title="Project poll"
+            // subtitle="Vote for the project I should complete next"
             title="Current tasks"
             subtitle="These are the projects I'm completing next"
           />
@@ -88,6 +94,16 @@ const Main: Component<IMainProps> = (props) => {
             </div>
           </Container>
         </section>
+
+        {/* <section>
+          <BigTitle
+            title="Timeline"
+            subtitle="Estimated progress and release dates of actively developed proejcts"
+          />
+          <HR />
+          <Timeline />
+          <HR />
+        </section> */}
 
         <section>
           <BigTitle
