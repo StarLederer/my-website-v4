@@ -10,6 +10,7 @@ import VeryBigTitle from "~/lib/VeryBigTitle";
 import Headerbar from "~/components/MainHeaderbar";
 import Footer from "~/components/Footer";
 import FeatureCTA from "../components/FeatureCTA";
+import Card from "~/lib/Card";
 
 const Nav: Component<{
   currentEntryId: EntryID
@@ -21,22 +22,22 @@ const Nav: Component<{
       <For each={topLevels()}>
         {(entry) => (
           <Feature
-          database={getDatabase()}
-          entry={entry}
-            class="height-l.2"
-          overlayClass="items-start"
-          compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
-            <Root>
-              <Card>
-                <Overlay>
-                  <OverlayInfo />
-                  <FeatureCTA entry={entry} style="solid" />
-                </Overlay>
-              </Card>
-              <Info />
-            </Root>
-          )}
-        />
+            database={getDatabase()}
+            entry={entry}
+          class="height-l.2"
+            overlayClass="items-start"
+            compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
+              <Root>
+                <Card>
+                  <Overlay>
+                    <OverlayInfo />
+                    <FeatureCTA entry={entry} style="solid" />
+                  </Overlay>
+                </Card>
+                <Info />
+              </Root>
+            )}
+          />
         )}
       </For>
     </nav>
@@ -129,33 +130,40 @@ const Main: Component<IMainProps> = (props) => {
           <div class="grid grid-auto-fit-l.2 gap-s.4 text-s">
             <For each={story()?.achievements}>
               {(element) => (
-                <div class="round-m.2 pd-m.2 bg-srf border border-color-srf flex flex-col gap-s justify-between items-start">
-                  <ProjectLogo logo={() => (element.icon)} />
-                  <div class="flex flex-col gap-s items-start">
+                <Card
+                  header={<ProjectLogo logo={() => (element.icon)} />}
+                  title={
                     <div class="flex flex-col gap-s.4">
-                      <div class="font-semibold text-fg-1">{element.type}:</div>
-                      <div class="font-bold text-m.2">{element.title}</div>
-                      <div class="text-fg-2" style="max-width: 36ch">{element.description}</div>
-                    </div>
+                    <div class="font-semibold text-fg-1">{element.type}:</div>
+                    <div class="font-bold text-m.2">{element.title}</div>
+                  </div>
+                  }
+                  texts={[element.description]}
+                  actions={
+                    <div class="flex flex-col gap-s items-start">
+
                     <Link href={element.viewUrl} style="secondary">View <div class="i-mdi-open-in-new" /></Link>
                   </div>
-                </div>
+                  }
+                />
               )}
             </For>
           </div>
         </Section>
 
-        <HR2 />
-
-        <Section
-          title="More projects"
-          subtitle="Discover my other skills by checking out these projects."
-        >
-          <Nav currentEntryId={entry().id}/>
-        </Section>
+        {/* <HR2 /> */}
       </Container>
 
-      <Footer />
+      <Footer>
+        <Container class="pd-bs-m.4">
+          <Section
+            title="More projects"
+            subtitle="Discover my other skills by checking out these projects."
+          >
+            <Nav currentEntryId={entry().id} />
+          </Section>
+        </Container>
+      </Footer>
     </Route>
   )
 };
