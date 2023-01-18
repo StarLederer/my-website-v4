@@ -2,7 +2,7 @@
   @apply flex flex-col gap-s.2;
 
   & .imageBg {
-    @apply overflow-hidden round-s height-full min-height-l.2 relative flex justify-center items-center pd-s;
+    @apply overflow-hidden round-s height-full relative flex justify-center items-center pd-s;
 
     & img {
       display: block;

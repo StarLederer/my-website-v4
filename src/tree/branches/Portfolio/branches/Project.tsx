@@ -32,7 +32,7 @@ const Nav: Component<{
                   <FeatureCTA entry={entry} style="solid" />
                 </Overlay>
               </Card>
-              <Info />
+              {/* <Info /> */}
             </Root>
           )}
         />
@@ -71,7 +71,7 @@ const Main: Component<IMainProps> = (props) => {
         <Container class="flex flex-col gap-m.8 pd-b-s pd-be-m.4">
           <Headerbar />
 
-          <div class="flex flex-col items-center gap-m.2 font-semibold">
+          <div class="flex flex-col items-center text-center gap-m.2 font-semibold">
             <ProjectLogo logo={findLogo(getDatabase(), entry())} innerClass="text-fg-0" />
             <div class="text-fg-2">
               <Show when={proj().term} fallback="Ongoing project" keyed>
@@ -89,7 +89,7 @@ const Main: Component<IMainProps> = (props) => {
           </div>
 
           {/* <img src={proj().feature?.imageUrl} alt="Project screenshot" class="round-s.5" /> */}
-          <Feature database={getDatabase()} entry={entry()} noOverlay cardClass="min-height-0"></Feature>
+          <Feature database={getDatabase()} entry={entry()} noOverlay noInfo noCover cardClass="min-height-0"></Feature>
         </Container>
       </header>
 

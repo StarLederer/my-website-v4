@@ -27,6 +27,8 @@ const Main: ComposableComponent<
     infoClass?: string;
     hero?: boolean;
     noOverlay?: boolean;
+    noInfo?: boolean;
+    noCover?: boolean;
   }
 > = (props) => {
   const project = () => props.entry.project;
@@ -43,8 +45,8 @@ const Main: ComposableComponent<
 
   const Card: ParentComponent = (elementProps) => (
     <div
-      class={`${styles.imageBg} ${props.class} ${project().features?.[0].imageFit == "cover" && styles.isFull}`}
-      style={`background-color: ${project().features?.[0].bgColor ?? "transparent"}`}
+      class={`${styles.imageBg} ${props.class} ${project().features?.[0].bgColor === undefined && "bg-def3"} ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
+      style={project().features?.[0].bgColor ? `background-color: ${project().features?.[0].bgColor};` : ""}
     >
       {/* Image */}
       <img
@@ -88,7 +90,9 @@ const Main: ComposableComponent<
           <OverlayInfo />
         </Overlay>
       </Card>
-      <Info />
+      <Show when={!props.noInfo}>
+        <Info />
+      </Show>
     </Root>
   </>)
 };
