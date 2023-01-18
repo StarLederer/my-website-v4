@@ -58,7 +58,6 @@ const Section: ParentComponent<{
 )
 
 type IMainProps = {
-  path: string;
   entry: Entry
 };
 
@@ -68,7 +67,7 @@ const Main: Component<IMainProps> = (props) => {
   const story = () => proj().story as Story;
 
   return (
-    <Route path={props.path} scroll>
+    <>
       <header class="bg-srf">
         <Container class="flex flex-col gap-m.8 pd-b-s pd-be-m.4">
           <Headerbar />
@@ -164,7 +163,7 @@ const Main: Component<IMainProps> = (props) => {
           </Section>
         </Container>
       </Footer>
-    </Route>
+    </>
   )
 };
 

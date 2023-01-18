@@ -36,11 +36,7 @@ const OverviewFeature: Component<{
   />
 );
 
-type IMainProps = {
-  path: string;
-};
-
-const Main: Component<IMainProps> = (props) => {
+const Main: Component = () => {
   const featuredEntries = () => {
     let entries = getDatabase().filter(({ project }) => !!project.features);
     return {
@@ -50,7 +46,7 @@ const Main: Component<IMainProps> = (props) => {
   }
 
   return (
-    <Route path={props.path} scroll>
+    <>
       <Container class="pd-bs-s">
         <Headerbar />
       </Container>
@@ -117,7 +113,7 @@ const Main: Component<IMainProps> = (props) => {
       </div>
 
       <Footer />
-    </Route>
+    </>
   )
 };
 

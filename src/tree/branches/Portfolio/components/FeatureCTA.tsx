@@ -2,6 +2,7 @@ import { Component } from "solid-js";
 import Button, { IButtonStyle } from "@/ui/primitives/Button";
 import router from "@/ui/router";
 import { Entry } from "~/data";
+import navigate from "~/tree/navigate";
 
 const Main: Component<{
   entry: Entry;
@@ -12,7 +13,7 @@ const Main: Component<{
     class={props.class}
     style={props.style}
     onClick={() => {
-      router.navigate(`/portfolio/${props.entry.id}`);
+      navigate(`/portfolio/${props.entry.id}`);
     }}
   >
     View project
