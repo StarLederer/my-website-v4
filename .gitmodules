@@ -1,6 +1,6 @@
 [submodule "submodules/unocss-preset"]
 	path = submodules/unocss-preset
-	url = https://github.com/StarLederer/unocss-preset.git
+	url = https://github.com/StarLederer/windblade.git
 [submodule "submodules/ui"]
 	path = submodules/ui
 	url = https://github.com/StarLederer/solid-components.git
