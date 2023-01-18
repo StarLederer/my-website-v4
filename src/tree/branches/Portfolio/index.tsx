@@ -23,7 +23,7 @@ const Main: Component<IMainProps> = (props) => {
 
   return (<>
     <Route path={props.path}>
-      <Route path={`${props.path}/all`}>
+      <Route path={`${props.path}/all`} scroll>
         <Portfolio />
       </Route>
       <For each={featuredEntries()}>

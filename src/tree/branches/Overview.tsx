@@ -50,7 +50,7 @@ const Main: Component<IMainProps> = (props) => {
   }
 
   return (
-    <Route path={props.path}>
+    <Route path={props.path} scroll>
       <Container class="pd-bs-s">
         <Headerbar />
       </Container>

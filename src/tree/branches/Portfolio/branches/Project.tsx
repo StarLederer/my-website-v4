@@ -66,7 +66,7 @@ const Main: Component<IMainProps> = (props) => {
   const story = () => proj().story as Story;
 
   return (
-    <Route path={props.path}>
+    <Route path={props.path} scroll>
       <header class="bg-srf">
         <Container class="flex flex-col gap-m.8 pd-b-s pd-be-m.4">
           <Headerbar />
