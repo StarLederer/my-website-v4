@@ -23,6 +23,7 @@ const Nav: Component<{
           <Feature
           database={getDatabase()}
           entry={entry}
+            class="height-l.2"
           overlayClass="items-start"
           compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
             <Root>
