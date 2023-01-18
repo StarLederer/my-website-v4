@@ -43,19 +43,11 @@
     @apply flex gap-s.5 items-center;
   }
 
-  &.isHero,
   &:hover {
     & .imageBg {
       & .overlay {
         opacity: 1;
       }
-    }
-  }
-
-  &.isHero {
-    & .imageBg {
-      @apply height-l.4;
-
     }
   }
 }

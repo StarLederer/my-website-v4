@@ -18,7 +18,7 @@ const OverviewFeature: Component<{
   <Feature
     database={getDatabase()}
     entry={props.entry}
-    hero={props.hero}
+    class={props.hero ? "height-l.4" : ""}
     compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
       <Root>
         <Card>

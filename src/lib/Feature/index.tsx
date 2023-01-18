@@ -25,7 +25,6 @@ const Main: ComposableComponent<
     cardClass?: string;
     overlayClass?: string;
     infoClass?: string;
-    hero?: boolean;
     noOverlay?: boolean;
     noInfo?: boolean;
     noCover?: boolean;
@@ -37,7 +36,7 @@ const Main: ComposableComponent<
   // Composition elements
 
   const Root: ParentComponent = (elementProps) => (
-    <div class={`${styles.root} ${props.class} ${props.hero && styles.isHero}`}>
+    <div class={`${styles.root} ${props.class}`}>
       {elementProps.children}
     </div>
 
