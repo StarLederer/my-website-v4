@@ -3,7 +3,7 @@ import { createSignal, createMemo, createRoot } from "solid-js";
 
 function main() {
   // System sceheme
-  const [systemSceheme, setSystemScheme] = createSignal<Variant | undefined>(undefined);
+  const [systemSceheme, setSystemScheme] = createSignal<Variant | undefined>(window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
   window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', event => {
     setSystemScheme(event.matches ? "light" : "dark");
   });
@@ -19,7 +19,7 @@ function main() {
         setEnforceScheme("dark");
         break;
       default:
-        setEnforceScheme(systemSceheme() ? "dark" : "light");
+        setEnforceScheme(systemSceheme() === "light" ? "dark" : "light");
     }
   };
 
