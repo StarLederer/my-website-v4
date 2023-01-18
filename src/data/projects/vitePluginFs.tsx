@@ -12,7 +12,7 @@ const project: Project = {
     {
       imageUrl: banner,
       imageFit: "contain",
-      bgColor: "hsl(220, 90%, 50%, 20%)"
+      bgColor: "#41d1ff44"
     }
   ],
   story: {

@@ -1,5 +1,6 @@
 import { Project } from "./types";
-import logo from "./logos/placeholder";
+import logo from "./logos/windblade";
+import banner from "./featureImages/windblade.svg";
 
 const project: Project = {
   name: "Windblade",
@@ -9,9 +10,9 @@ const project: Project = {
   logo: logo,
   features: [
     {
-      imageUrl: "//picsum.photos/800/600",
+      imageUrl: banner,
       imageFit: "contain",
-      bgColor: "hsl(300, 80%, 50%, 40%)",
+      bgColor: "#818cf844",
     }
   ],
   story: {

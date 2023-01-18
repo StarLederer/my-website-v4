@@ -69,7 +69,7 @@ const project: Project = {
         viewUrl: "https://www.rust-lang.org/",
       },
       {
-        icon: <div class="i-simple-icons-libgit2" />,
+        icon: <div class="i-simple-icons-git" />,
         type: "Learned",
         title: "LibGit2",
         description: "Interfacer's git features are powered by a Rust wrapper of libgit2 which means that interfacer is a limited, but nonetheless functioning Git GUI.",
@@ -83,7 +83,7 @@ const project: Project = {
         viewUrl: "https://github.com/unocss/unocss",
       },
       {
-        icon: <div class="i-simple-icons-nix" />,
+        icon: <div class="i-simple-icons-nixos" />,
         type: "Discovered",
         title: "Nix",
         description: "Nix is an incredible package manager for Unix that powers the fully reproducible development environment of Interfacer",
