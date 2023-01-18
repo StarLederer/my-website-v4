@@ -4,7 +4,7 @@ type Story = {
   description: string[];
   achievements: {
     icon: JSXElement;
-    type: "Singificant event" | "Learned" | "Discovered" | "Developed"
+    type: "Significant event" | "Learned" | "Discovered" | "Developed"
     title: string,
     description: string,
     viewUrl: string

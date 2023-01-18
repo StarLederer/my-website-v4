@@ -40,8 +40,8 @@ const Main: Component<IMainProps> = (props) => {
 
   return (
     <Headerbar onBack={onBack()}>
-      {/* <Button onClick={() => { router.navigate("/about-me") }}>About me</Button>
-      <Button style="secondary" onClick={() => { router.navigate("/portfolio/all") }}>Portfolio</Button> */}
+      {/* <Button onClick={() => { router.navigate("/about-me") }}>About me</Button> */}
+      <Button style="secondary" onClick={() => { router.navigate("/portfolio/all") }}>Portfolio</Button>
       <Link href="https://github.com/StarLederer"><div class="i-simple-icons-github" /></Link>
       <Button onClick={themeStore.toggleScheme} class="pd-s round-s relative">
         <div class="i-mdi-brightness-4 transition" style={`opacity: ${themeStore.enforceScheme() === undefined ? 1 : 0}`} />
