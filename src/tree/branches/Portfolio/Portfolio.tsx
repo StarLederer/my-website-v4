@@ -77,7 +77,7 @@ const Main: Component = () => {
           {/* Feature and buttons */}
           <div class="flex flex-col gap-m.2 items-center">
             {/* Feature */}
-            <Feature database={getDatabase()} entry={featuredEntries().first} hero noInfo class="width-full" noOverlay />
+            <Feature database={getDatabase()} entry={featuredEntries().first} noInfo class="width-full" noOverlay />
 
             {/* Buttons */}
             <div class="flex gap-s.2">
