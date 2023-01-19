@@ -49,9 +49,8 @@ const project: Project = {
   ],
   story: {
     description: [
-      "Interfacter started as a graphical editor for my experimental web template and evolved into a general command line automator that can help bring non-developers into the development process with no learning curve.",
+      "Interfacter started as a graphical editor for my experimental Vite template but evolved into a general command line automator that can help bring non-developers into the development process with no learning curve.",
       "This app lets users use git and configure graphical buttons that execute shell commands so that non-developers can easily execute tasks like pulling a git remote, installing dependencies, and starting dev servers.",
-      "Some use cases of interfacer are a Vite app that is graphically editable in dev mode, a game with developer GUI, or just a graphical shortcut app for developers.",
     ],
     achievements: [
       {

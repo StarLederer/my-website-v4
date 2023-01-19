@@ -17,7 +17,7 @@ const project: Project = {
   ],
   story: {
     description: [
-      "Windblade is an atomic CSS library powered by UnoCSS with classes similar to Tailwind but with a much better color system that adapts to any hue and automatically handles light and dark color schemes, and with all RTL properties removed in favor of logical ones.",
+      "Windblade is an atomic CSS library powered by UnoCSS with classes similar to Tailwind but with a color system that adapts to any hue and automatically handles light / dark color schemes, as well as with a legacy CSS (like non-logical properties) removed.",
       "This UnoCSS preset is still unstable and only serves my personal use cases but I am working towards completing its features, documenting it, and getting it on the official list of UnoCSS presets."
     ],
     achievements: [

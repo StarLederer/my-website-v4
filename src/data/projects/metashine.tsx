@@ -4,7 +4,7 @@ import image from "./featureImages/metashine.png";
 
 const project: Project = {
   name: "Metashine",
-  description: "Modern and good-looking media meta-tag editor.",
+  description: "Modern and good-looking media metadata editor.",
   sourceCodeUrl: "https://github.com/StarLederer/metashine",
   homepageUrl: "https://github.com/StarLederer/metashine/releases",
   logo: logo,
@@ -20,8 +20,8 @@ const project: Project = {
   ],
   story: {
     description: [
-      "Metashine was born out of my personal need to edit MP3 files and evolved into a general-purpose metadata editor. I am continually improving the app to let other people in on the experience.",
-      "At the time of creation, existing solutions did not satisfy my strict aesthetic demands, often did not comply with established specifications, presented them confusingly, or had a UX that encouraged making mistakes. Metashine recognizes the complex and unfortunately consuming nature of media metadata and helps users put that shine on their files by helping them find, write and format metadata correctly.",
+      "Metashine was born out of my personal need to edit MP3 files but evolved into a general-purpose metadata editor. I am continually improving the app to let other people in on the experience.",
+      "At the time of creation, existing solutions did not satisfy my strict aesthetic demands, did not comply with established specifications, presented them confusingly, or had a UX that encouraged making mistakes. Metashine recognizes the convoluted nature and history of media metadata and helps users put that shine on their files by helping them find, write and format metadata correctly.",
       "While Metashine v2 is still focused on my personal needs, the upcoming v3 aims for complete ID3 compliance.",
     ],
     achievements: [

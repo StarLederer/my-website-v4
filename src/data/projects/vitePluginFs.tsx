@@ -18,8 +18,8 @@ const project: Project = {
   story: {
     description: [
       "This is a Vite plugin that allows developers to interact with Node's fs/promises module from the browser.",
-      "The plugin runs a local server that works as a proxy to the fs/promises module and provides developers with an easy-to-use wrapper for all possible requests that makes it look like they are interacting with the normal fs/promises module.",
-      "vite-plugin-fs was initially created to power a visual content editor for websites but can be used in any other dev-time use case that requires interaction with the file system.",
+      "The plugin runs a local server that works as a proxy to fs/promises and provides developers with an easy-to-use wrapper for supported requests to make it look like they are interacting with the regular fs/promises.",
+      "vite-plugin-fs was initially created to power a visual website content editor but when I realized it could be useful in many situations I released it separately.",
     ],
     achievements: [
       {
