@@ -24,7 +24,7 @@ const Nav: Component<{
           <Feature
             database={getDatabase()}
             entry={entry}
-          class="height-l.2"
+          class="size-b-l.2"
             overlayClass="items-start"
             compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
               <Root>
@@ -89,8 +89,8 @@ const Main: Component<IMainProps> = (props) => {
             <div class="text-(s+s.2) text-fg-1">{proj().description}</div>
           </div>
 
-          {/* <img src={proj().feature?.imageUrl} alt="Project screenshot" class="round-s.5" /> */}
-          <Feature database={getDatabase()} entry={entry()} noOverlay noInfo noCover cardClass="min-height-0"></Feature>
+          {/* <img src={proj().feature?.imageUrl} alt="Project screenshot" class="rounded-s.5" /> */}
+          <Feature database={getDatabase()} entry={entry()} noOverlay noInfo noCover cardClass="min-size-b-0"></Feature>
         </Container>
       </header>
 
@@ -106,8 +106,8 @@ const Main: Component<IMainProps> = (props) => {
         </Section>
 
         <section class="text-s gap-s.2 grid grid-auto-fit-l.2">
-          <Link class="round-full pd-m.2" style="solid" href={proj().homepageUrl}><div class="i-mdi-web" />Project homepage </Link>
-          <Link class="round-full pd-m.2" style="solid" href={proj().sourceCodeUrl ?? "#"}><div class="i-mdi-git" />Source code </Link>
+          <Link class="rounded-full pd-m.2" style="solid" href={proj().homepageUrl}><div class="i-mdi-web" />Project homepage </Link>
+          <Link class="rounded-full pd-m.2" style="solid" href={proj().sourceCodeUrl ?? "#"}><div class="i-mdi-git" />Source code </Link>
         </section>
 
         {/* <Section
@@ -117,7 +117,7 @@ const Main: Component<IMainProps> = (props) => {
           <div class="grid grid-auto-fit-l.2 gap-s.4">
             <For each={Array(2).fill("Technology")}>
               {(element) => (
-                <div class="round-s height-m bg-abs"></div>
+                <div class="rounded-s size-b-m bg-abs"></div>
               )}
             </For>
           </div>

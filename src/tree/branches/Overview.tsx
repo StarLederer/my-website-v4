@@ -18,15 +18,15 @@ const OverviewFeature: Component<{
   <Feature
     database={getDatabase()}
     entry={props.entry}
-    class={props.hero ? "height-l.4" : ""}
+    class={props.hero ? "size-b-l.4" : ""}
     compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
       <Root>
         <Card>
           <Overlay>
             <OverlayInfo />
             <div class="flex gap-s.2">
-              {/* <Button class="pd-s round-s bg-blur" style="solid">Celebrate<div class="i-mdi-party-popper" /></Button> */}
-              <Link class="pd-s round-s bg-blur" style="solid" href={props.entry.project.homepageUrl}>View<div class="i-mdi-open-in-new" /></Link>
+              {/* <Button class="pd-s rounded-s bg-blur" style="solid">Celebrate<div class="i-mdi-party-popper" /></Button> */}
+              <Link class="pd-s rounded-s bg-blur" style="solid" href={props.entry.project.homepageUrl}>View<div class="i-mdi-open-in-new" /></Link>
             </div>
           </Overlay>
         </Card>
@@ -57,13 +57,13 @@ const Main: Component = () => {
           <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
         </div>
         <p>Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-        {/* <div class="flex bg-srf items-center gap-s pd-s round-m.2">
+        {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
           <div>Want to support?</div>
           <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
         </div> */}
       </header>
 
-      <div class="flex flex-col gap-m pd-be-m width-full">
+      <div class="flex flex-col gap-m pd-be-m size-i-full">
         <section>
           <BigTitle
             // title="Project poll"

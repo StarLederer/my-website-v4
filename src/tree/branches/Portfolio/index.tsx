@@ -44,7 +44,7 @@ const PropjectButtons: Component<{
 const FeatureButtons: Component<{ entry: Entry }> = (props) => (
   <PropjectButtons
     entry={props.entry}
-    buttonClass="pd-s round-s"
+    buttonClass="pd-s rounded-s"
     firstButtonStyle="solid"
     otherButtonStyle="secondary"
     otherButtonClass="bg-blur"
@@ -77,7 +77,7 @@ const Main: Component = () => {
           {/* Feature and buttons */}
           <div class="flex flex-col gap-m.2 items-center">
             {/* Feature */}
-            <Feature database={getDatabase()} entry={featuredEntries().first} noInfo class="width-full" noOverlay />
+            <Feature database={getDatabase()} entry={featuredEntries().first} noInfo class="size-i-full" noOverlay />
 
             {/* Buttons */}
             <div class="flex gap-s.2">
@@ -85,7 +85,7 @@ const Main: Component = () => {
                 entry={featuredEntries().first}
                 firstButtonStyle="solid"
                 otherButtonStyle="secondary"
-                buttonClass="round-full pd-m.2"
+                buttonClass="rounded-full pd-m.2"
               />
             </div>
           </div>
@@ -104,7 +104,7 @@ const Main: Component = () => {
                 <Feature
                   database={getDatabase()}
                   entry={entry}
-                  class="height-l.4"
+                  class="size-b-l.4"
                   compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
                     <Root>
                       <Card>

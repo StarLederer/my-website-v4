@@ -33,7 +33,7 @@ const Child: Component<{
       {/* Children */}
       {/* <Show when={props.data.children}>
           <div class="flex-row pd-is-s gap-s">
-            <div class="width-min bg-fg-4 mg-b-s round-full" />
+            <div class="size-i-min bg-fg-4 mg-b-s rounded-full" />
             <div class="gap-s.2 flex-1">
               <For each={props.data.children}>
                 {(child) => (
@@ -54,7 +54,7 @@ const Main: Component<{ class?: string }> = (props) => {
   return (
     <div class={`${props.class} grid grid-auto-fit-m gap-s.4`}>
       <For each={topLevels()} fallback={<div>No items</div>}>
-        {(item) => <Child data={item.project} class="height-full" />}
+        {(item) => <Child data={item.project} class="size-b-full" />}
       </For>
     </div>
   )

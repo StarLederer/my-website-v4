@@ -43,14 +43,14 @@ const project: Project = {
         ],
         achievements: [
           {
-            icon: <Logo class="width-s"/>,
+            icon: <Logo class="size-i-s"/>,
             type: "Learned",
             title: "Post-processing in Bevy",
             description: "Post-processing is a critical step in making any image look production-ready. I have implemented post-processing in other engines before; Bevy is the newest addition to the collection.",
             viewUrl: "https://bevyengine.org/news/bevy-0-9/",
           },
           {
-            icon: <Logo class="width-s"/>,
+            icon: <Logo class="size-i-s"/>,
             type: "Learned",
             title: "Rendering in Bevy",
             description: "Bevy rendering is an innovative and well-architected way that takes the most advantage of their ECS design. With this skill under my belt, I can build very high-performance renderers on top of the Bevy engine.",

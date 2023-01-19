@@ -5,8 +5,8 @@ const Main: ParentComponent<{
   onBack?: () => void;
 }> = (props) => {
   return (
-    <header class="width-full flex justify-center">
-      <div class="flex-1 flex justify-between items-center max-width-l">
+    <header class="size-i-full flex justify-center">
+      <div class="flex-1 flex justify-between items-center max-size-i-l">
         <div class="flex gap-s items-center">
           <Show when={props.onBack}>
             <Button onClick={props.onBack}><div class="i-mdi-chevron-left" /></Button>

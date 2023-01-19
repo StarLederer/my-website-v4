@@ -2,21 +2,21 @@
   @apply flex flex-col gap-s.2;
 
   & .imageBg {
-    @apply overflow-hidden round-s height-full relative flex justify-center items-center pd-s;
+    @apply overflow-hidden rounded-s size-b-full relative flex justify-center items-center pd-s;
 
     & img {
       display: block;
       /* width: auto; */
       max-width: auto;
       height: auto;
-      @apply max-height-full max-width-full round-s.5 transition;
+      @apply max-size-b-full max-size-i-full rounded-s.5 transition;
     }
 
     &.isFull {
       padding: 0;
 
       & img {
-        @apply height-full width-full;
+        @apply size-b-full size-i-full;
         object-fit: cover;
       }
     }

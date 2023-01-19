@@ -14,7 +14,7 @@ const Main: Component = () => {
   const featuredEntries = () => getCorporate().filter(({ project }) => !!project.story);
 
   return (
-    <main class="width-full height-full relative overflow-hidden">
+    <main class="size-i-full size-b-full relative overflow-hidden">
       <Route path="/portfolio">
         <Route path="/portfolio/all" scroll>
           <Portfolio />
