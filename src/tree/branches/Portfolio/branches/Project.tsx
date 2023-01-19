@@ -11,6 +11,7 @@ import Headerbar from "~/components/MainHeaderbar";
 import Footer from "~/components/Footer";
 import FeatureCTA from "../components/FeatureCTA";
 import Card from "~/lib/Card";
+import Glow from "~/lib/Glow";
 
 const Nav: Component<{
   currentEntryId: EntryID
@@ -24,7 +25,7 @@ const Nav: Component<{
           <Feature
             database={getDatabase()}
             entry={entry}
-          class="size-b-l.2"
+            class="size-b-l.2"
             overlayClass="items-start"
             compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
               <Root>
@@ -68,8 +69,10 @@ const Main: Component<IMainProps> = (props) => {
 
   return (
     <>
-      <header class="bg-srf">
-        <Container class="flex flex-col gap-m.8 pd-b-s pd-be-m.4">
+      <header class="relative bg-srf">
+        <Glow style={`--color: ${proj().features?.[0].bgColor};`}/>
+
+        <Container class="relative flex flex-col gap-m.8 pd-b-s pd-be-m.4">
           <Headerbar />
 
           <div class="flex flex-col items-center text-center gap-m.2 font-semibold">
@@ -133,16 +136,16 @@ const Main: Component<IMainProps> = (props) => {
                   header={<ProjectLogo logo={() => (element.icon)} />}
                   title={
                     <div class="flex flex-col gap-s.4">
-                    <div class="font-semibold text-fg-1">{element.type}:</div>
-                    <div class="font-bold text-m.2">{element.title}</div>
-                  </div>
+                      <div class="font-semibold text-fg-1">{element.type}:</div>
+                      <div class="font-bold text-m.2">{element.title}</div>
+                    </div>
                   }
                   texts={[element.description]}
                   actions={
                     <div class="flex flex-col gap-s items-start">
 
-                    <Link href={element.viewUrl} style="secondary">View <div class="i-mdi-open-in-new" /></Link>
-                  </div>
+                      <Link href={element.viewUrl} style="secondary">View <div class="i-mdi-open-in-new" /></Link>
+                    </div>
                   }
                 />
               )}
@@ -157,7 +160,7 @@ const Main: Component<IMainProps> = (props) => {
         <Container class="pd-bs-m.4">
           <Section
             title="More projects"
-            subtitle="Discover my other skills by checking out these projects."
+            subtitle="Check out the other projects to discover what else I can do."
           >
             <Nav currentEntryId={entry().id} />
           </Section>
