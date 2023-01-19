@@ -4,7 +4,7 @@ import banner from "./featureImages/windblade.svg";
 
 const project: Project = {
   name: "Windblade",
-  description: "Tailwind but built with cutting edge CSS only and powered by UnoCSS",
+  description: "Unofficial cutting-edge version of Tailwind",
   homepageUrl: "https://github.com/StarLederer/windblade",
   sourceCodeUrl: "https://github.com/StarLederer/windblade",
   logo: logo,
@@ -17,8 +17,9 @@ const project: Project = {
   ],
   story: {
     description: [
-      "Windblade is an atomic CSS library powered by UnoCSS with classes similar to Tailwind but with a color system that adapts to any hue and automatically handles light / dark color schemes, as well as with a legacy CSS (like non-logical properties) removed.",
-      "This UnoCSS preset is still unstable and only serves my personal use cases but I am working towards completing its features, documenting it, and getting it on the official list of UnoCSS presets."
+      "Windblade is a Tailwind-inspired UnoCSS preset that does two things better than Tailwind. First, Windblade uses semantic hue-independent colors that automatically adapt to the browser color scheme. Second, it uses logical properties instead of right-to-left, top-to-bottom ones.",
+      "Windblade is faster to customize than Tailwind thanks to very few built-in colors, and unlike Tailwind, it is a suitable solution for international layouts.",
+      "This UnoCSS preset is unstable at the moment and only serves my personal projects, but I am working towards completing its features, documenting it, and getting it on the official list of UnoCSS presets.",
     ],
     achievements: [
       {
