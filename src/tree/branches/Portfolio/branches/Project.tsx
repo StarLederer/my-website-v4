@@ -74,7 +74,7 @@ const Main: Component<IMainProps> = (props) => {
 
           <div class="flex flex-col items-center text-center gap-m.2 font-semibold">
             <ProjectLogo logo={findLogo(getDatabase(), entry())} innerClass="text-fg-0" />
-            <div class="text-fg-2">
+            <div class="text-fg-2 size-i-full">
               <Show when={proj().term} fallback="Ongoing project" keyed>
                 {(term) => (<>
                   {term.start.toDateString()}
