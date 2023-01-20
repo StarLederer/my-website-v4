@@ -1,5 +1,4 @@
 import { Component, For, ParentComponent, Show } from "solid-js";
-import { Route } from "@/ui/router";
 import { Story, Entry, findLogo, getCorporate as getDatabase, EntryID } from "~/data";
 import Link from "@/ui/primitives/Button/Link";
 import Container from "~/lib/Container";
@@ -12,6 +11,8 @@ import Footer from "~/components/Footer";
 import FeatureCTA from "../components/FeatureCTA";
 import Glow from "~/components/Glow";
 import Starfield from "~/components/Starfield";
+import Button from "@/ui/primitives/Button";
+import navigate from "~/tree/navigate";
 
 const Nav: Component<{
   currentEntryId: EntryID
@@ -72,7 +73,7 @@ const Main: Component<IMainProps> = (props) => {
       <header class="relative bg-srf overflow-hidden">
         <Starfield />
 
-        <Container class="relative flex flex-col gap-m.8 pd-b-s pd-be-m.4">
+        <Container class="relative flex flex-col gap-m.8 pd-b-s pd-be-m.6">
           <Headerbar />
 
           <div class="flex flex-col items-center text-center gap-m.2 font-semibold">
@@ -99,7 +100,7 @@ const Main: Component<IMainProps> = (props) => {
         </Container>
       </header>
 
-      <Container class="flex flex-col gap-m pd-b-m">
+      <Container class="flex flex-col gap-m.6 pd-b-m.6">
         <Section title="Description">
           <div class="flex flex-col gap-s">
             <For each={story().description}>
@@ -158,8 +159,8 @@ const Main: Component<IMainProps> = (props) => {
         {/* <HR2 /> */}
       </Container>
 
-      <Footer>
-        <Container class="pd-bs-m.4">
+      <div class="bg-def2">
+        <Container class="pd-b-m.6">
           <Section
             title="More projects"
             subtitle="Check out the other projects to discover what else I can do."
@@ -167,6 +168,25 @@ const Main: Component<IMainProps> = (props) => {
             <Nav currentEntryId={entry().id} />
           </Section>
         </Container>
+      </div>
+
+      <Button style="solid" class="relative size-i-full pd-b-m overflow-hidden" onClick={() => navigate("/contact")}>
+        <Starfield />
+        <Container class="flex items-center justify-center">
+          <div class="relative">
+            <div class="absolute bg-int inset-(-m.2) rounded-full transition" style="filter: blur(2rem);" />
+            <div class="relative flex flex-col gap-s justify-center">
+              <span class="text-m.2">🤯</span>
+              <span class="font-bold">Seen enough?</span>
+              <span class="font-extrabold text-m.2">Get in touch.</span>
+            </div>
+          </div>
+        </Container>
+      </Button>
+
+      <Footer>
+
+
       </Footer>
     </>
   )

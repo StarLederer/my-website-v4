@@ -3,6 +3,7 @@ import router, { Route } from "@/ui/router";
 import Portfolio from "./branches/Portfolio";
 import Project from "./branches/Portfolio/branches/Project";
 import AboutMe from "./branches/AboutMe";
+import Contact from "./branches/Contact";
 import Overview from "./branches/Overview";
 import { getCorporate } from "~/data";
 import { addNavigationHandler, removeNavigationHandler } from "./navigate";
@@ -31,6 +32,9 @@ const Main: Component = () => {
             </Route>
           )}
         </For>
+      </Route>
+      <Route path="/contact">
+        <Contact />
       </Route>
       <Route path="/overview" scroll>
         <Overview />

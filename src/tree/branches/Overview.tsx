@@ -11,6 +11,7 @@ import { Entry, getOss as getDatabase } from "~/data";
 import Headerbar from "~/components/MainHeaderbar";
 import Footer from "~/components/Footer";
 import Starfield from "~/components/Starfield";
+import navigate from "../navigate";
 
 const OverviewFeature: Component<{
   entry: Entry;
@@ -64,6 +65,7 @@ const Main: Component = () => {
                 <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
               </div>
               <p class="text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
+              <Button style="solid" onClick={() => navigate("/contact")}>Contact <div class="i-mdi-envelope"/></Button>
               {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
               <div>Want to support?</div>
               <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
