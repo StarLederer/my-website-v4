@@ -13,6 +13,7 @@ import Glow from "~/components/Glow";
 import Starfield from "~/components/Starfield";
 import Button from "@/ui/primitives/Button";
 import navigate from "~/tree/navigate";
+import PreFooterCTA from "../components/PreFooterCTA";
 
 const Nav: Component<{
   currentEntryId: EntryID
@@ -170,24 +171,9 @@ const Main: Component<IMainProps> = (props) => {
         </Container>
       </div>
 
-      <Button style="solid" class="relative size-i-full pd-b-m overflow-hidden" onClick={() => navigate("/contact")}>
-        <Starfield />
-        <Container class="flex items-center justify-center">
-          <div class="relative">
-            <div class="absolute bg-int inset-(-m.2) rounded-full transition" style="filter: blur(2rem);" />
-            <div class="relative flex flex-col gap-s justify-center">
-              <span class="text-m.2">🤯</span>
-              <span class="font-bold">Seen enough?</span>
-              <span class="font-extrabold text-m.2">Get in touch.</span>
-            </div>
-          </div>
-        </Container>
-      </Button>
+      <PreFooterCTA emoji="🤯" question="Seen enough?" />
 
-      <Footer>
-
-
-      </Footer>
+      <Footer />
     </>
   )
 };
