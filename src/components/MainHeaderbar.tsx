@@ -1,4 +1,4 @@
-import { Component, createEffect, For } from "solid-js";
+import { Component, For } from "solid-js";
 import router from "@/ui/router";
 import Button from "@/ui/primitives/Button";
 import Headerbar from "~/lib/Headerbar";
@@ -10,26 +10,6 @@ type IMainProps = {
 };
 
 const Main: Component<IMainProps> = (props) => {
-  const classes = {
-    light: ["theme-light", "hue-225"],
-    dark: ["theme-dark", "hue-45"]
-  };
-
-  createEffect(() => {
-    switch (themeStore.scheme()) {
-      case "dark":
-        document.body.classList.remove(...classes.light);
-        document.body.classList.add(...classes.dark);
-        break;
-      case "light":
-        document.body.classList.remove(...classes.dark);
-        document.body.classList.add(...classes.light);
-        break;
-      default:
-        document.body.classList.remove(...classes.dark, ...classes.light);
-    }
-  })
-
   const links: {
     title: string,
     url: string;
