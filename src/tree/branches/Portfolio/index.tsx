@@ -100,7 +100,7 @@ const Main: Component = () => {
         </Container>
       </header>
 
-      <section class="pd-m.6">
+      <section class="pd-b-m.6">
         <BigTitle
           title={`${featuredEntries().others.length} more awesome projects`}
           subtitle=""
