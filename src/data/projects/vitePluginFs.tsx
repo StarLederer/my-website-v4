@@ -4,7 +4,7 @@ import banner from "./featureImages/vite-plugin-fs.svg";
 
 const project: Project = {
   name: "vite-plugin-fs",
-  description: "Interact with fs directly from the browser in dev mode.",
+  description: "Interact with fs directly from the browser in dev mode",
   logo: vitePluginFs,
   sourceCodeUrl: "https://github.com/StarLederer/vite-plugin-fs",
   homepageUrl: "https://www.npmjs.com/package/vite-plugin-fs",

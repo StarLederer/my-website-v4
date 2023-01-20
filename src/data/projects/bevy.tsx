@@ -7,7 +7,7 @@ import featureBlur2 from "./featureImages/bevyBloom/blur2.png";
 
 const project: Project = {
   name: "Bevy",
-  description: "A refreshingly simple data-driven game engine.",
+  description: "A refreshingly simple data-driven game engine",
   logo: Logo,
   sourceCodeUrl: "https://github.com/bevyengine/bevy",
   homepageUrl: "https://bevyengine.org/",
@@ -15,7 +15,7 @@ const project: Project = {
   children: [
     {
       name: "Revamped bloom",
-      description: "Improve the look and expand the artistic capabilities of Bevy's bloom effect.",
+      description: "Improved the look and expanded the artistic capabilities of Bevy's bloom effect",
       homepageUrl: "https://github.com/bevyengine/bevy/pull/6677",
       features: [
         {

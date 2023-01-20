@@ -3,7 +3,7 @@ import logo from "./logos/mwgsl";
 
 const project: Project = {
   name: "MWGSL",
-  description: "WGSL with compile-time super-powers.",
+  description: "WGSL with compile-time super-powers",
   homepageUrl: "https://github.com/StarLederer/mwgsl",
   logo: logo,
   children: [

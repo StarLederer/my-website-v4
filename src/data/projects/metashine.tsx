@@ -4,7 +4,7 @@ import image from "./featureImages/metashine.png";
 
 const project: Project = {
   name: "Metashine",
-  description: "Modern and good-looking media metadata editor.",
+  description: "Modern and good-looking media metadata editor",
   sourceCodeUrl: "https://github.com/StarLederer/metashine",
   homepageUrl: "https://github.com/StarLederer/metashine/releases",
   logo: logo,

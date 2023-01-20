@@ -11,7 +11,7 @@ const bgColor = "hsl(200, 80%, 50%, 40%)";
 
 const project: Project = {
   name: "Interfacer",
-  description: "A GUI that helps non-developers execute shell commands and use git.",
+  description: "A GUI that helps non-developers execute shell commands and use git",
   sourceCodeUrl: "https://github.com/StarLederer/interfacer",
   homepageUrl: "https://github.com/StarLederer/interfacer",
   logo: logo,
