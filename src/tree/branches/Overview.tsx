@@ -10,6 +10,7 @@ import Projects from "~/components/Projects";
 import { Entry, getOss as getDatabase } from "~/data";
 import Headerbar from "~/components/MainHeaderbar";
 import Footer from "~/components/Footer";
+import Starfield from "~/components/Starfield";
 
 const OverviewFeature: Component<{
   entry: Entry;
@@ -47,21 +48,30 @@ const Main: Component = () => {
 
   return (
     <>
-      <Container class="pd-bs-s">
-        <Headerbar />
-      </Container>
+      <div class="relative overflow-hidden">
+        <Starfield />
 
-      <header class="flex flex-col gap-s pd-s pd-b-l.2 items-center text-center">
-        <div class="text-m.2">
-          Hello, I'm
-          <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
-        </div>
-        <p>Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-        {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
-          <div>Want to support?</div>
-          <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
-        </div> */}
-      </header>
+        <Container class="pd-bs-s">
+          <Headerbar />
+        </Container>
+
+        <header class="pd-s pd-b-l.2 flex justify-center">
+          <div class="relative">
+            <div class="absolute inset-(-m.4) bg-def3 rounded-full" style="filter: blur(2rem);" />
+            <div class="relative flex flex-col gap-s items-center text-center">
+              <div class="text-m.2">
+                Hello, I'm
+                <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
+              </div>
+              <p>Innovator, open-source enthusiast, UX/DX perfectionist.</p>
+              {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
+              <div>Want to support?</div>
+              <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
+            </div> */}
+            </div>
+          </div>
+        </header>
+      </div>
 
       <div class="flex flex-col gap-m pd-be-m size-i-full">
         <section>

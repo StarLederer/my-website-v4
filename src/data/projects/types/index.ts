@@ -1,6 +1,7 @@
 import { Component, JSXElement } from "solid-js";
 
 type Story = {
+  hue: number;
   description: string[];
   achievements: {
     icon: JSXElement;

@@ -36,6 +36,7 @@ const project: Project = {
         }
       ],
       story: {
+        hue: 10,
         description: [
           "The revamped bloom effect is my first contribution to a major open-source project.",
           "The story began in a comment section of a Youtube video that reviewed the Bevy 0.9 update and the first version of the effect that lacked very important to me features. My comment was not entirely correct about the mistakes made by the original developer and I was bullied into proving that my criticism was legitimate.",

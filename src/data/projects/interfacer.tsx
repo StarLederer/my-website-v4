@@ -48,6 +48,7 @@ const project: Project = {
     }
   ],
   story: {
+    hue: 200,
     description: [
       "Interfacter started as a graphical editor for my experimental Vite template but evolved into a general command line automator that can help bring non-developers into the development process with no learning curve.",
       "This app lets users use git and configure graphical buttons that execute shell commands so that non-developers can easily execute tasks like pulling a git remote, installing dependencies, and starting dev servers.",

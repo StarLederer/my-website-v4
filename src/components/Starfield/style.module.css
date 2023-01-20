@@ -1,0 +1,39 @@
+.star {
+  @apply size-b-s;
+  transition: calc((1 - var(--random)) * 300ms + 100ms);
+}
+
+.normal {
+  @apply text-fg-3;
+  transform: var(--translate) scale(calc((1 - var(--depth)) * 0.6 + 0.4)) rotate(calc(var(--random) * 45deg));
+  filter: blur(calc(var(--depth) * 0.2 * 1rem));
+}
+
+.twinkles {
+  @apply text-int;
+  animation: 10s twinkle infinite ease;
+  opacity: 0;
+}
+
+@keyframes twinkle {
+	0% {
+		transform: var(--translate) scale(0) rotate(0deg);
+    opacity: 0;
+	}
+  40% {
+    transform: var(--translate) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: var(--translate) scale(1.2) rotate(180deg);
+    opacity: 1;
+  }
+  80% {
+		transform: var(--translate) scale(0) rotate(360deg);
+    opacity: 0;
+	}
+	100% {
+		transform: var(--translate) scale(0) rotate(360deg);
+    opacity: 0;
+	}
+}

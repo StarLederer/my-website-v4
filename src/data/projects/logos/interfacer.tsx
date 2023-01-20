@@ -19,8 +19,6 @@ const Main: Component<{ class?: string }> = (props) => (
       <path style="fill:currentColor;fill-opacity:0.4;" d="m 5,5.5 v 3 a 0.5,0.5 45 0 0 0.5,0.5 h 3 a 0.5,0.5 135 0 0 0.5,-0.5 V 5.5 a 0.5,0.5 45 0 0 -0.5,-0.5 H 5.5 a 0.5,0.5 135 0 0 -0.5,0.5 z" />
     </g>
   </svg>
-
-
 );
 
 export default Main;

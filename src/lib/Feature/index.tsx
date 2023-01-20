@@ -44,7 +44,7 @@ const Main: ComposableComponent<
 
   const Card: ParentComponent = (elementProps) => (
     <div
-      class={`${styles.imageBg} ${props.class} ${project().features?.[0].bgColor === undefined && "bg-def3"} ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
+      class={`${styles.imageBg} ${props.class} ${project().features?.[0].bgColor === undefined && "bg-srf2"} ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
       style={project().features?.[0].bgColor ? `background-color: ${project().features?.[0].bgColor};` : ""}
     >
       {/* Image */}

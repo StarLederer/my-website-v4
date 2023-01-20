@@ -11,6 +11,11 @@ const Main: Component = () => {
   onMount(() => { addNavigationHandler("/overview"); })
   onCleanup(() => { removeNavigationHandler(); })
 
+  window.addEventListener('mousemove', (ev) => {
+    document.body.style.setProperty('--mouse-x', "" + ev.clientX / window.innerWidth);
+    document.body.style.setProperty('--mouse-y', "" + ev.clientY / window.innerHeight);
+  });
+
   const featuredEntries = () => getCorporate().filter(({ project }) => !!project.story);
 
   return (

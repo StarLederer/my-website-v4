@@ -16,6 +16,7 @@ const project: Project = {
     }
   ],
   story: {
+    hue: 300,
     description: [
       "This is a Vite plugin that allows developers to interact with Node's fs/promises module from the browser.",
       "The plugin runs a local server that works as a proxy to fs/promises and provides developers with an easy-to-use wrapper for supported requests to make it look like they are interacting with the regular fs/promises.",

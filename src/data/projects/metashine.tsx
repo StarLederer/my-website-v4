@@ -9,16 +9,17 @@ const project: Project = {
   homepageUrl: "https://github.com/StarLederer/metashine/releases",
   logo: logo,
   term: {
-    start: new Date(24, 3, 2021)
+    start: new Date(2021, 3, 24),
   },
   features: [
     {
       imageUrl: image,
       imageFit: "contain",
       bgColor: "hsl(258, 80%, 50%, 40%)",
-    }
+    },
   ],
   story: {
+    hue: 258,
     description: [
       "Metashine was born out of my personal need to edit MP3 files but evolved into a general-purpose metadata editor. I am continually improving the app to let other people in on the experience.",
       "At the time of creation, existing solutions did not satisfy my strict aesthetic demands, did not comply with established specifications, presented them confusingly, or had a UX that encouraged making mistakes. Metashine recognizes the convoluted nature and history of media metadata and helps users put that shine on their files by helping them find, write and format metadata correctly.",

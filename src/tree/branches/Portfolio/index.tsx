@@ -11,6 +11,8 @@ import Feature from "~/lib/Feature";
 import VeryBigTitle from "~/lib/VeryBigTitle";
 import Footer from "~/components/Footer";
 import FeatureCTA from "./components/FeatureCTA";
+import Starfield from "~/components/Starfield";
+import Glow from "~/components/Glow";
 
 const PropjectButtons: Component<{
   entry: Entry;
@@ -62,8 +64,10 @@ const Main: Component = () => {
 
   return (
     <div class="flex flex-col gap-m">
-      <header class="bg-srf">
-        <Container class="flex flex-col gap-m.4 pd-b-m.4 pd-bs-s">
+      <header class="relative bg-srf">
+        <Starfield />
+
+        <Container class="relative flex flex-col gap-m.4 pd-b-m.4 pd-bs-s">
           <Headerbar />
 
           {/* Titles */}
@@ -76,8 +80,11 @@ const Main: Component = () => {
 
           {/* Feature and buttons */}
           <div class="flex flex-col gap-m.2 items-center">
-            {/* Feature */}
-            <Feature database={getDatabase()} entry={featuredEntries().first} noInfo class="size-i-full" noOverlay />
+            {/* Glow and feature */}
+            <div class="relative size-i-full">
+              <Glow hue={featuredEntries().first.project.story?.hue ?? 45} class="absolute inset-(-m.2)" />
+              <Feature database={getDatabase()} entry={featuredEntries().first} noInfo noOverlay />
+            </div>
 
             {/* Buttons */}
             <div class="flex gap-s.2">

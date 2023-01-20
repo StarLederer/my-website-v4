@@ -16,6 +16,7 @@ const project: Project = {
     }
   ],
   story: {
+    hue: 234,
     description: [
       "Windblade is a Tailwind-inspired UnoCSS preset that does two things better than Tailwind. First, Windblade uses semantic hue-independent colors that automatically adapt to the browser color scheme. Second, it uses logical properties instead of right-to-left, top-to-bottom ones.",
       "Windblade is faster to customize than Tailwind thanks to very few built-in colors, and unlike Tailwind, it is a suitable solution for international layouts.",

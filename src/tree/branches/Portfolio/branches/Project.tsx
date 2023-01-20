@@ -5,13 +5,13 @@ import Link from "@/ui/primitives/Button/Link";
 import Container from "~/lib/Container";
 import ProjectLogo from "~/lib/ProjectLogo";
 import Feature from "~/lib/Feature";
-import { HR2 } from "~/lib/Lines";
+import Card from "~/lib/Card";
 import VeryBigTitle from "~/lib/VeryBigTitle";
 import Headerbar from "~/components/MainHeaderbar";
 import Footer from "~/components/Footer";
 import FeatureCTA from "../components/FeatureCTA";
-import Card from "~/lib/Card";
-import Glow from "~/lib/Glow";
+import Glow from "~/components/Glow";
+import Starfield from "~/components/Starfield";
 
 const Nav: Component<{
   currentEntryId: EntryID
@@ -69,8 +69,8 @@ const Main: Component<IMainProps> = (props) => {
 
   return (
     <>
-      <header class="relative bg-srf">
-        <Glow style={`--color: ${proj().features?.[0].bgColor};`}/>
+      <header class="relative bg-srf overflow-hidden">
+        <Starfield />
 
         <Container class="relative flex flex-col gap-m.8 pd-b-s pd-be-m.4">
           <Headerbar />
@@ -80,10 +80,10 @@ const Main: Component<IMainProps> = (props) => {
             <div class="text-fg-2 size-i-full">
               <Show when={proj().term} fallback="Ongoing project" keyed>
                 {(term) => (<>
-                  {term.start.toDateString()}
+                  {term.start.toLocaleDateString('en', { day: "2-digit", month: "short", year: "numeric" })}
                   &nbsp;-&nbsp;
                   <Show when={term.end} fallback="Present" keyed>
-                    {(end) => end.toDateString()}
+                    {(end) => end.toLocaleDateString('en', { day: "2-digit", month: "short", year: "numeric" })}
                   </Show>
                 </>)}
               </Show>
@@ -92,8 +92,10 @@ const Main: Component<IMainProps> = (props) => {
             <div class="text-(s+s.2) text-fg-1">{proj().description}</div>
           </div>
 
-          {/* <img src={proj().feature?.imageUrl} alt="Project screenshot" class="rounded-s.5" /> */}
-          <Feature database={getDatabase()} entry={entry()} noOverlay noInfo noCover cardClass="min-size-b-0"></Feature>
+          <div class="relative">
+            <Glow hue={proj().story?.hue ?? 45} class="absolute inset-(-m.2)" />
+            <Feature database={getDatabase()} entry={entry()} noOverlay noInfo noCover cardClass="min-size-b-0" />
+          </div>
         </Container>
       </header>
 

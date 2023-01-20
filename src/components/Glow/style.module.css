@@ -1,0 +1,26 @@
+.sphere {
+  block-size: 100%;
+  inline-size: 100%;
+  position: absolute;
+
+  border-radius: 50%;
+  background: var(--color);
+  animation: pulse 20s ease-in-out infinite;
+  filter: blur(40rem);
+}
+
+@keyframes pulse {
+	0% {
+		transform: translate(0%, 0%);
+    opacity: 1;
+	}
+  50% {
+		transform: scale(1.2);
+    opacity: 0.8;
+	}
+	100% {
+		transform: translate(0%, 0%);
+    opacity: 1;
+	}
+}
+
