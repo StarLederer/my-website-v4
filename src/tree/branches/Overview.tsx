@@ -58,12 +58,12 @@ const Main: Component = () => {
         <header class="pd-s pd-b-l.2 flex justify-center">
           <div class="relative">
             <div class="absolute inset-(-m.4) bg-def3 rounded-full" style="filter: blur(2rem);" />
-            <div class="relative flex flex-col gap-s items-center text-center">
+            <div class="relative flex flex-col gap-s items-center text-center font-semibold">
               <div class="text-m.2">
                 Hello, I'm
                 <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
               </div>
-              <p>Innovator, open-source enthusiast, UX/DX perfectionist.</p>
+              <p class="text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
               {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
               <div>Want to support?</div>
               <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
