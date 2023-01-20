@@ -13,6 +13,7 @@ import Footer from "~/components/Footer";
 import FeatureCTA from "./components/FeatureCTA";
 import Starfield from "~/components/Starfield";
 import Glow from "~/components/Glow";
+import PreFooterCTA from "./components/PreFooterCTA";
 
 const PropjectButtons: Component<{
   entry: Entry;
@@ -63,17 +64,17 @@ const Main: Component = () => {
   }
 
   return (
-    <div class="flex flex-col gap-m">
-      <header class="relative bg-srf">
+    <div >
+      <header class="relative bg-srf overflow-hidden">
         <Starfield />
 
-        <Container class="relative flex flex-col gap-m.4 pd-b-m.4 pd-bs-s">
+        <Container class="relative flex flex-col gap-m.4 pd-b-m.6 pd-bs-s">
           <Headerbar />
 
           {/* Titles */}
           <div class="flex flex-col gap-m.2 items-center text-center">
             <ProjectLogo logo={findLogo(getDatabase(), featuredEntries().first)} />
-            <div class="text-fg-1">{featuredEntries().first.project.name}</div>
+            <span class="text-fg-1">{featuredEntries().first.project.name}</span>
             <VeryBigTitle>Proudest creation</VeryBigTitle>
             <span class="font-semibold text-(s+s.2) text-fg-2">{featuredEntries().first.project.description}</span>
           </div>
@@ -87,7 +88,7 @@ const Main: Component = () => {
             </div>
 
             {/* Buttons */}
-            <div class="flex gap-s.2">
+            <div class="relative flex gap-s.2">
               <PropjectButtons
                 entry={featuredEntries().first}
                 firstButtonStyle="solid"
@@ -99,7 +100,7 @@ const Main: Component = () => {
         </Container>
       </header>
 
-      <section>
+      <section class="pd-m.6">
         <BigTitle
           title={`${featuredEntries().others.length} more awesome projects`}
           subtitle=""
@@ -131,6 +132,8 @@ const Main: Component = () => {
           </div>
         </Container>
       </section>
+
+      <PreFooterCTA emoji="📬" question="Ready to talk?" />
 
       <Footer />
     </div>
