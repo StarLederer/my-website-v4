@@ -86,7 +86,7 @@ const project: Project = {
         icon: <div class="i-simple-icons-nixos" />,
         type: "Discovered",
         title: "Nix",
-        description: "Nix is an incredible package manager for Unix that powers the fully reproducible development environment of Interfacer",
+        description: "Nix is an incredible package manager for Unix-like systems that powers the fully reproducible development environment of Interfacer",
         viewUrl: "https://github.com/NixOS/nix",
       }
     ],
