@@ -76,7 +76,7 @@ const Main: Component = () => {
             <ProjectLogo logo={findLogo(getDatabase(), featuredEntries().first)} />
             <span class="text-fg-1">{featuredEntries().first.project.name}</span>
             <VeryBigTitle>Proudest creation</VeryBigTitle>
-            <span class="font-semibold text-(s+s.2) text-fg-2">{featuredEntries().first.project.description}</span>
+            <span class="font-semibold text-(s+s.2) text-fg-2 size-i-full">{featuredEntries().first.project.description}</span>
           </div>
 
           {/* Feature and buttons */}
