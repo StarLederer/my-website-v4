@@ -65,7 +65,10 @@ const Main: Component = () => {
                 <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
               </div>
               <p class="text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-              <Button style="solid" onClick={() => navigate("/contact")}>Contact <div class="i-mdi-envelope"/></Button>
+              <div class="flex bg-srf justify-center items-center gap-s pd-s rounded-m.2">
+                <span>I'm loking for a job</span>
+                <Button style="solid" onClick={() => navigate("/portfolio/all")} >See portfolio <div class="i-mdi-book-open" /></Button>
+              </div>
               {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
               <div>Want to support?</div>
               <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
