@@ -14,7 +14,7 @@ const Skills: Component<{
   <div class="flex flex-wrap gap-s.4">
     <For each={props.skills}>
       {(skill) => (
-        <div class="bg-srf bprder bprder-color-srf pd-s rounded-full">
+        <div class="bg-srf bprder bprder-color-srf pd-s rounded-full font-semibold">
           {skill}
         </div>
       )}
@@ -29,15 +29,16 @@ const Main: Component = (props) => {
       skills: [
         "Node",
         "Typescript",
-        "Web frontend",
+        "WebView",
         "Solid JS",
         "Tauri",
         "Git",
-        "UI design",
-        "Interaction design",
         "Atomic CSS",
         "Tailwind",
-        "VR development",
+        "UI design",
+        "Interaction design",
+        "Internationalization",
+        // "VR development",
       ],
     },
     {
@@ -45,10 +46,14 @@ const Main: Component = (props) => {
       skills: [
         "Deno",
         "Rust",
-        "Bevy engine",
-        "Open-source mainteinership",
-        "Graphics programming",
         "Backend",
+        "Bevy engine",
+        "Graphics programming",
+        "User research",
+        "Open-source mainteinership",
+        "Linux",
+        "Nix",
+        "Docker",
       ],
     },
     {
@@ -65,29 +70,28 @@ const Main: Component = (props) => {
         "C#",
         "Godot engine",
         "Unity engine",
-        "User research",
       ],
     }
   ];
 
   return (
-    <div class="size-b-full overflow-auto flex flex-col justify-between gap-m.4 bg-srf3">
+    <div class="size-b-full overflow-auto flex flex-col justify-between gap-m bg-srf3">
       <div>
         <header class="relative overflow-hidden">
           <Starfield />
 
-          <Container class="relative flex flex-col gap-m.4 pd-be-m.4 pd-b-s">
+          <Container class="relative flex flex-col gap-m pd-be-m pd-b-s">
             <Headerbar />
 
             <div class="flex flex-col gap-m.2 ">
               <img src="https://avatars.githubusercontent.com/u/55361752" alt="Picture of me" class="relative rounded-full size-i-m" style="z-index: 1;" />
-              <div class="flex flex-col items-start gap-s">
+              <div class="flex flex-col items-start gap-m.2">
                 <div class="relative">
-                  <div class="absolute bg-def3 inset-(-s) rounded-full" style="filter: blur(2rem)" />
-                  <div class="relative flex flex-col gap-s.4">
+                  <div class="absolute bg-def3 inset-(-m.2) rounded-full" style="filter: blur(2rem)" />
+                  <div class="relative flex flex-col gap-s.4 font-semibold">
                     <h1 class="font-extrabold text-m.2">Star Lederer</h1>
-                    <p class="font-semibold text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-                    <p class="line-height-(s+s.2)" style="max-width: 48ch">I love exploring abstract ideas and discovering new things. I see opportunities in everything and use them to improve the world.</p>
+                    <p class="text-fg-1 text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
+                    <p class="text-fg-2 line-height-(s+s.2)" style="max-width: 48ch">I love exploring abstract ideas and discovering new things. I see opportunities in everything and use them to improve the world.</p>
                   </div>
                 </div>
                 <div class="relative">
