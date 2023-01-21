@@ -32,6 +32,10 @@ const Main: Component<IMainProps> = (props) => {
         title: "Portfolio",
         url: "/portfolio/all",
       },
+      {
+        title: "About me",
+        url: "/about-me",
+      },
     ];
 
   return (
@@ -54,7 +58,7 @@ const Main: Component<IMainProps> = (props) => {
               <div class="i-mdi-menu" />
             </ButtonBase>
             <div class="absolute inset-bs-full inset-ie-0 transition" style={`opacity: ${isOpen() ? 1 : 0}; pointer-events: ${isOpen() ? 'all' : 'none'}`}>
-              <PopoverPanel class="bg-blur bg-srf border border-color-srf list-none pd-s.2 mg-b-s.2 rounded-s flex flex-col gap-s.2">
+              <PopoverPanel class="bg-blur bg-srf border border-color-srf pd-s.2 mg-b-s.2 rounded-s flex flex-col size-i-max-content gap-s.2">
                 <For each={links}>
                   {(link) => {
                     const isCurrent = () => router.route().current.startsWith(link.url);
@@ -63,7 +67,7 @@ const Main: Component<IMainProps> = (props) => {
                         class={`relative pd-s rounded-s`}
                         onClick={() => { if (!isCurrent()) navigate(link.url) }}
                       >
-                        {link.title}
+                        <span style="white-space: nowrap;">{link.title}</span>
                         <div class="absolute inset-be-(s.5-(s.2/2)) size-i-s.2 size-b-s.2 rounded-full transition" style={`background: currentColor; opacity: ${isCurrent() ? 1 : 0};`} />
                       </Button>
                     );

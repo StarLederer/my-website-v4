@@ -39,9 +39,9 @@ const Main: Component = () => {
       <Route path="/overview" scroll>
         <Overview />
       </Route>
-      {/* <Route path="/about-mr">
+      <Route path="/about-me">
         <AboutMe />
-      </Route> */}
+      </Route>
     </>
   );
 };
