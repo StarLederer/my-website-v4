@@ -15,8 +15,8 @@ const Star: Component<{
       --depth: ${Math.random()};
       --random: ${Math.random()};
       --translate: translate(
-        calc(${Math.random() * size - size / 2}px + var(--mouse-x, 0) * 1rem * (1 - var(--depth))),
-        calc(${Math.random() * size - size / 2}px + var(--mouse-y, 0) * 1rem * (1 - var(--depth)))
+        calc(${Math.random() * size - size / 2}px + var(--mouse-x, 0.5) * 1rem * (1 - var(--depth))),
+        calc(${Math.random() * size - size / 2}px + var(--mouse-y, 0.5) * 1rem * (1 - var(--depth)))
       );
     `}
     viewBox="0 0 4 4"
