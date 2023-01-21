@@ -14,7 +14,7 @@ const Skills: Component<{
   <div class="flex flex-wrap gap-s.4">
     <For each={props.skills}>
       {(skill) => (
-        <div class="bg-srf bprder bprder-color-srf pd-s rounded-full font-semibold">
+        <div class="bg-srf bprder bprder-color-srf pd-s rounded-full font-semibold items-center justify-center" style="white-space: nowrap;">
           {skill}
         </div>
       )}

@@ -4,6 +4,7 @@
 
 button {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .bg-blur {
