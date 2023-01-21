@@ -9,6 +9,7 @@ specifiers:
   '@unocss/vite': ^0.47.6
   postcss: ^8.4.20
   postcss-preset-env: ^7.8.3
+  solid-headless: ^0.13.0
   solid-js: ^1.6.5
   typescript: ^4.9.4
   unocss: ^0.45.30
@@ -18,6 +19,7 @@ specifiers:
 
 dependencies:
   '@iconify-json/simple-icons': 1.1.40
+  solid-headless: 0.13.0_solid-js@1.6.5
   solid-js: 1.6.5
   vite-plugin-favicons-inject: 2.1.0
 
@@ -2400,6 +2402,16 @@ packages:
       totalist: 3.0.0
     dev: true
 
+  /solid-headless/0.13.0_solid-js@1.6.5:
+    resolution: {integrity: sha512-N118iPl7W5lyug4K+4c0cwM8YR2yEVJ/3H4wq6tVijATHfXfLnB1ACFI5GGHSXlwu70PUzaGSKwcVqLlloUMyA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      solid-js: ^1.2
+    dependencies:
+      solid-js: 1.6.5
+      solid-use: 0.5.0_solid-js@1.6.5
+    dev: false
+
   /solid-js/1.6.5:
     resolution: {integrity: sha512-q1/wIIRmrWltNnP3PW/e29eRWCC24hX5amBiOXomw2kDiM6JZZ10l+chK/Oi/6ipwUxeabYl5YD2lJOObY9heA==}
     dependencies:
@@ -2415,6 +2427,15 @@ packages:
       '@babel/types': 7.20.5
       solid-js: 1.6.5
     dev: true
+
+  /solid-use/0.5.0_solid-js@1.6.5:
+    resolution: {integrity: sha512-z1AaS99SL3gNP70K4+XIVKGXDRI56m3Q6Q4X63bfgw0kaN6cwT4SAyFZAmIRjHcvf5rOMRQfNgUV4YVDha+LcQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      solid-js: ^1.2
+    dependencies:
+      solid-js: 1.6.5
+    dev: false
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
