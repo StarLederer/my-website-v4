@@ -36,6 +36,10 @@ const Main: Component<IMainProps> = (props) => {
         title: "About me",
         url: "/about-me",
       },
+      {
+        title: "Contact",
+        url: "/contact",
+      },
     ];
 
   return (
