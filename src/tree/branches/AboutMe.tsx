@@ -14,7 +14,7 @@ const Skills: Component<{
   <div class="flex flex-wrap gap-s.4">
     <For each={props.skills}>
       {(skill) => (
-        <div class="bg-srf bprder bprder-color-srf pd-s rounded-full font-semibold items-center justify-center" style="white-space: nowrap;">
+        <div class="bg-srf bprder bprder-color-srf p-s rounded-full font-semibold items-center justify-center" style="white-space: nowrap;">
           {skill}
         </div>
       )}
@@ -80,7 +80,7 @@ const Main: Component = (props) => {
         <header class="relative overflow-hidden">
           <Starfield />
 
-          <Container class="relative flex flex-col gap-m pd-be-m pd-b-s">
+          <Container class="relative flex flex-col gap-m p-be-m p-b-s">
             <Headerbar />
 
             <div class="flex flex-col gap-m.2 ">
@@ -95,7 +95,7 @@ const Main: Component = (props) => {
                   </div>
                 </div>
                 <div class="relative">
-                  <Button class="rounded-s pd-s bg-blur" style="secondary" onClick={() => navigate("/contact")}>Contact me <div class="i-mdi-envelope" /></Button>
+                  <Button class="rounded-s p-s bg-blur" style="secondary" onClick={() => navigate("/contact")}>Contact me <div class="i-mdi-envelope" /></Button>
                 </div>
               </div>
             </div>

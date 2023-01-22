@@ -70,7 +70,7 @@ const Main: ComposableComponent<
 
   const Info: Component = () => (
     <div class={`${styles.info} ${props.infoClass}`}>
-      <ProjectLogo class="pd-s.4 bg-srf" innerClass="text-fg-3" logo={findLogo(props.database, props.entry)} />
+      <ProjectLogo class="p-s.4 bg-srf" innerClass="text-fg-3" logo={findLogo(props.database, props.entry)} />
 
       <div class="font-bold">{project().name}</div>
       {/* <a class="font-bold" href={project().homepageUrl}>{project().name}</a> */}

@@ -45,7 +45,7 @@ const Main: Component<IMainProps> = (props) => {
   return (
     <Headerbar>
       <Link href="https://github.com/StarLederer"><div class="i-simple-icons-github" /></Link>
-      <Button onClick={themeStore.toggleScheme} class="pd-s rounded-s relative">
+      <Button onClick={themeStore.toggleScheme} class="p-s rounded-s relative">
         <div class="i-mdi-brightness-4 transition" style={`opacity: ${themeStore.enforceScheme() === undefined ? 1 : 0}`} />
         <div class="absolute i-mdi-brightness-7 transition" style={`opacity: ${themeStore.enforceScheme() === "light" ? 1 : 0}`} />
         <div class="absolute i-mdi-brightness-2 transition" style={`opacity: ${themeStore.enforceScheme() === "dark" ? 1 : 0}`} />
@@ -62,13 +62,13 @@ const Main: Component<IMainProps> = (props) => {
               <div class="i-mdi-menu" />
             </ButtonBase>
             <div class="absolute inset-bs-full inset-ie-0 transition" style={`opacity: ${isOpen() ? 1 : 0}; pointer-events: ${isOpen() ? 'all' : 'none'}`}>
-              <PopoverPanel class="bg-blur bg-srf border border-color-srf pd-s.2 mg-b-s.2 rounded-s flex flex-col size-i-max-content gap-s.2">
+              <PopoverPanel class="bg-blur bg-srf border border-color-srf p-s.2 m-b-s.2 rounded-s flex flex-col size-i-max-content gap-s.2">
                 <For each={links}>
                   {(link) => {
                     const isCurrent = () => router.route().current.startsWith(link.url);
                     return (
                       <Button
-                        class={`relative pd-s rounded-s`}
+                        class={`relative p-s rounded-s`}
                         onClick={() => { if (!isCurrent()) navigate(link.url) }}
                       >
                         <span style="white-space: nowrap;">{link.title}</span>

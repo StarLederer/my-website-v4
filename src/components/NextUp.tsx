@@ -31,7 +31,7 @@ const Main: Component = () => {
   const projects = () => getDatabase().filter(({ project }) => project.priority);
 
   return (
-    <div class="grid grid-auto-fit-l.2 gap-s.5">
+    <div class="grid grid-fit-cols-l.2 gap-s.5">
       <For each={projects()}>
         {(entry) => (
           <Post entry={entry} />

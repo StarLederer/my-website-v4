@@ -2,7 +2,7 @@
   @apply flex flex-col gap-s.2;
 
   & .imageBg {
-    @apply overflow-hidden rounded-s size-b-full relative flex justify-center items-center pd-s;
+    @apply overflow-hidden rounded-s size-b-full relative flex justify-center items-center p-s;
 
     & img {
       display: block;
@@ -22,7 +22,7 @@
     }
 
     & .overlay {
-      @apply flex flex-col absolute inset-0 gap-s.5 pd-(s) transition theme-dark bg-abs;
+      @apply flex flex-col absolute inset-0 gap-s.5 p-(s) transition theme-dark bg-abs;
       flex: 1;
       justify-content: end;
       background: linear-gradient(transparent, black);

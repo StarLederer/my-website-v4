@@ -21,7 +21,7 @@ const Nav: Component<{
   const topLevels = () => getDatabase().filter((entry) => !!entry.project.story && entry.id !== props.currentEntryId);
 
   return (
-    <nav class="grid grid-auto-fit-l.2 gap-s.4 text-s">
+    <nav class="grid grid-fit-cols-l.2 gap-s.4 text-s">
       <For each={topLevels()}>
         {(entry) => (
           <Feature
@@ -74,7 +74,7 @@ const Main: Component<IMainProps> = (props) => {
       <header class="relative bg-srf overflow-hidden">
         <Starfield />
 
-        <Container class="relative flex flex-col gap-m.8 pd-b-s pd-be-m.6">
+        <Container class="relative flex flex-col gap-m.8 p-b-s p-be-m.6">
           <Headerbar />
 
           <div class="flex flex-col items-center text-center gap-m.2 font-semibold">
@@ -101,7 +101,7 @@ const Main: Component<IMainProps> = (props) => {
         </Container>
       </header>
 
-      <Container class="flex flex-col gap-m.6 pd-b-m.6">
+      <Container class="flex flex-col gap-m.6 p-b-m.6">
         <Section title="Description">
           <div class="flex flex-col gap-s">
             <For each={story().description}>
@@ -112,16 +112,16 @@ const Main: Component<IMainProps> = (props) => {
           </div>
         </Section>
 
-        <section class="text-s gap-s.2 grid grid-auto-fit-l.2">
-          <Link class="rounded-full pd-m.2" style="solid" href={proj().homepageUrl}><div class="i-mdi-web" />Project homepage </Link>
-          <Link class="rounded-full pd-m.2" style="solid" href={proj().sourceCodeUrl ?? "#"}><div class="i-mdi-git" />Source code </Link>
+        <section class="text-s gap-s.2 grid grid-fit-cols-l.2">
+          <Link class="rounded-full p-m.2" style="solid" href={proj().homepageUrl}><div class="i-mdi-web" />Project homepage </Link>
+          <Link class="rounded-full p-m.2" style="solid" href={proj().sourceCodeUrl ?? "#"}><div class="i-mdi-git" />Source code </Link>
         </section>
 
         {/* <Section
           title="Look inside"
           subtitle="See how this project was made."
         >
-          <div class="grid grid-auto-fit-l.2 gap-s.4">
+          <div class="grid grid-fit-cols-l.2 gap-s.4">
             <For each={Array(2).fill("Technology")}>
               {(element) => (
                 <div class="rounded-s size-b-m bg-abs"></div>
@@ -133,7 +133,7 @@ const Main: Component<IMainProps> = (props) => {
         <Section
           title="Big achievements"
         >
-          <div class="grid grid-auto-fit-l.2 gap-s.4 text-s">
+          <div class="grid grid-fit-cols-l.2 gap-s.4 text-s">
             <For each={story()?.achievements}>
               {(element) => (
                 <Card
@@ -161,7 +161,7 @@ const Main: Component<IMainProps> = (props) => {
       </Container>
 
       <div class="bg-def2">
-        <Container class="pd-b-m.6">
+        <Container class="p-b-m.6">
           <Section
             title="More projects"
             subtitle="Check out the other projects to discover what else I can do."

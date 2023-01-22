@@ -27,8 +27,8 @@ const OverviewFeature: Component<{
           <Overlay>
             <OverlayInfo />
             <div class="flex gap-s.2">
-              {/* <Button class="pd-s rounded-s bg-blur" style="solid">Celebrate<div class="i-mdi-party-popper" /></Button> */}
-              <Link class="pd-s rounded-s bg-blur" style="solid" href={props.entry.project.homepageUrl}>View<div class="i-mdi-open-in-new" /></Link>
+              {/* <Button class="p-s rounded-s bg-blur" style="solid">Celebrate<div class="i-mdi-party-popper" /></Button> */}
+              <Link class="p-s rounded-s bg-blur" style="solid" href={props.entry.project.homepageUrl}>View<div class="i-mdi-open-in-new" /></Link>
             </div>
           </Overlay>
         </Card>
@@ -52,11 +52,11 @@ const Main: Component = () => {
       <div class="relative overflow-hidden">
         <Starfield />
 
-        <Container class="pd-bs-s">
+        <Container class="p-bs-s">
           <Headerbar />
         </Container>
 
-        <header class="pd-s pd-b-l.2 flex justify-center">
+        <header class="p-s p-b-l.2 flex justify-center">
           <div class="relative">
             <div class="absolute inset-(-m.4) bg-def3 rounded-full" style="filter: blur(2rem);" />
             <div class="relative flex flex-col gap-s items-center text-center font-semibold">
@@ -65,11 +65,11 @@ const Main: Component = () => {
                 <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
               </div>
               <p class="text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-              <div class="flex bg-srf justify-center items-center gap-s pd-s rounded-m.2">
+              <div class="flex bg-srf justify-center items-center gap-s p-s rounded-m.2">
                 <span>I'm loking for a job</span>
                 <Button style="solid" onClick={() => navigate("/portfolio/all")} >See portfolio <div class="i-mdi-book-open" /></Button>
               </div>
-              {/* <div class="flex bg-srf items-center gap-s pd-s rounded-m.2">
+              {/* <div class="flex bg-srf items-center gap-s p-s rounded-m.2">
               <div>Want to support?</div>
               <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
             </div> */}
@@ -78,7 +78,7 @@ const Main: Component = () => {
         </header>
       </div>
 
-      <div class="flex flex-col gap-m pd-be-m size-i-full">
+      <div class="flex flex-col gap-m p-be-m size-i-full">
         <section>
           <BigTitle
             // title="Project poll"
@@ -98,7 +98,7 @@ const Main: Component = () => {
           />
           <Container class="flex flex-col gap-s">
             <OverviewFeature entry={featuredEntries().first} hero />
-            <div class="gap-s grid grid-auto-fit-l.2">
+            <div class="gap-s grid grid-fit-cols-l.2">
               <For each={featuredEntries().others}>
                 {(entry) => <OverviewFeature entry={entry} />}
               </For>

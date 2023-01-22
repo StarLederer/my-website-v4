@@ -8,7 +8,7 @@ const Main: Component<{
   emoji: string;
   question: string;
 }> = (props) => (
-  <Button style="solid" class="relative size-i-full pd-b-m overflow-hidden" onClick={() => navigate("/contact")}>
+  <Button style="solid" class="relative size-i-full p-b-m overflow-hidden" onClick={() => navigate("/contact")}>
     <Starfield />
     <Container class="flex items-center justify-center">
       <div class="relative">

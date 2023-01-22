@@ -47,7 +47,7 @@ const PropjectButtons: Component<{
 const FeatureButtons: Component<{ entry: Entry }> = (props) => (
   <PropjectButtons
     entry={props.entry}
-    buttonClass="pd-s rounded-s"
+    buttonClass="p-s rounded-s"
     firstButtonStyle="solid"
     otherButtonStyle="secondary"
     otherButtonClass="bg-blur"
@@ -68,7 +68,7 @@ const Main: Component = () => {
       <header class="relative bg-srf overflow-hidden">
         <Starfield />
 
-        <Container class="relative flex flex-col gap-m.4 pd-b-m.6 pd-bs-s">
+        <Container class="relative flex flex-col gap-m.4 p-b-m.6 p-bs-s">
           <Headerbar />
 
           {/* Titles */}
@@ -93,14 +93,14 @@ const Main: Component = () => {
                 entry={featuredEntries().first}
                 firstButtonStyle="solid"
                 otherButtonStyle="secondary"
-                buttonClass="rounded-full pd-m.2"
+                buttonClass="rounded-full p-m.2"
               />
             </div>
           </div>
         </Container>
       </header>
 
-      <section class="pd-b-m.6">
+      <section class="p-b-m.6">
         <BigTitle
           title={`${featuredEntries().others.length} more awesome projects`}
           subtitle=""
