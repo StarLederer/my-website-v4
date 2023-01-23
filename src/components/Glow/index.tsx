@@ -1,5 +1,5 @@
-import { theme } from "@/unocss-preset";
-import { getSLA } from "@/unocss-preset/core";
+import { theme } from "@/unocss-preset/unocss";
+import { getSLA } from "@/unocss-preset/unocss/core";
 import { JSX, Component, For, createSignal, createEffect } from "solid-js";
 import styles from "./style.module.css";
 import themeStore from "~/stores/themeStore";

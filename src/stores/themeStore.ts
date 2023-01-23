@@ -1,4 +1,4 @@
-import type { Variant } from "@/unocss-preset/core";
+import type { Variant } from "@/unocss-preset/unocss/core";
 import { createSignal, createMemo, createRoot } from "solid-js";
 
 function main() {
