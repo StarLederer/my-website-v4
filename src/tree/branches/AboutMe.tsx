@@ -91,7 +91,7 @@ const Main: Component = (props) => {
                   <div class="relative flex flex-col gap-s.4 font-semibold">
                     <h1 class="font-extrabold text-m.2">Star Lederer</h1>
                     <p class="text-fg-1 text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-                    <p class="text-fg-2 line-height-(s+s.2)" style="max-width: 48ch">I love exploring abstract ideas and discovering new things. I see opportunities in everything and use them to improve the world.</p>
+                    <p class="text-fg-2 leading-(s+s.2)" style="max-width: 48ch">I love exploring abstract ideas and discovering new things. I see opportunities in everything and use them to improve the world.</p>
                   </div>
                 </div>
                 <div class="relative">

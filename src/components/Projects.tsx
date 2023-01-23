@@ -33,7 +33,7 @@ const Child: Component<{
       {/* Children */}
       {/* <Show when={props.data.children}>
           <div class="flex-row p-is-s gap-s">
-            <div class="size-i-min bg-fg-4 m-b-s rounded-full" />
+            <div class="size-i-px bg-fg-4 m-b-s rounded-full" />
             <div class="gap-s.2 flex-1">
               <For each={props.data.children}>
                 {(child) => (

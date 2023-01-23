@@ -106,7 +106,7 @@ const Main: Component<IMainProps> = (props) => {
           <div class="flex flex-col gap-s">
             <For each={story().description}>
               {(element) => (
-                <p class="line-height-(m.2*1.2)">{element}</p>
+                <p class="leading-(s+s.4)">{element}</p>
               )}
             </For>
           </div>

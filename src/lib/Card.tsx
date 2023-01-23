@@ -15,7 +15,7 @@ const Main: Component<{
         {props.title}
         <div class="flex flex-col gap-s.6">
           <For each={props.texts}>
-            {(text) => <p class="text-fg-2 line-height-(s+s.2)" style="max-width: 36ch">{text}</p>}
+            {(text) => <p class="text-fg-2 leading-(s+s.2)" style="max-width: 36ch">{text}</p>}
           </For>
         </div>
       </div>
