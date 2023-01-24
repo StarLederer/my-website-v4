@@ -21,7 +21,7 @@ body {
 
 .animate-in,
 .animate-out {
-  animation-duration: 500ms;
+  @apply animation-duration-m.4;
   animation-fill-mode: forwards;
 }
 
