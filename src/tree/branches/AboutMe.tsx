@@ -46,6 +46,7 @@ const Main: Component = (props) => {
       skills: [
         "Deno",
         "Rust",
+        "Prisma",
         "Backend",
         "Bevy engine",
         "Graphics programming",
