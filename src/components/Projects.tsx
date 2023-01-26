@@ -16,9 +16,9 @@ const Child: Component<{
       {/* Main */}
       <Card
         header={<ProjectLogo logo={props.data.logo} />}
-        title={<h4 class="font-bold text-fg-0 text-(s+s.2)">{props.data.name}</h4>}
+        title={<h4 class="font-bold text-fg-1 text-(s+s.2)">{props.data.name}</h4>}
         texts={[
-          <span class="text-fg-1">{props.data.description}</span>,
+          props.data.description,
           // `Open source: ${props.data.closedSource ? "no" : "yes"}`,
           `My role: ${props.data.role ?? "creator"}`,
         ]}
@@ -33,7 +33,7 @@ const Child: Component<{
       {/* Children */}
       {/* <Show when={props.data.children}>
           <div class="flex-row p-is-s gap-s">
-            <div class="size-i-px bg-fg-4 m-b-s rounded-full" />
+            <div class="size-i-px bg-fg-5 m-b-s rounded-full" />
             <div class="gap-s.2 flex-1">
               <For each={props.data.children}>
                 {(child) => (

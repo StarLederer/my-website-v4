@@ -51,8 +51,8 @@ const Section: ParentComponent<{
   title: string
   subtitle?: string;
 }> = (props) => (
-  <section class="flex flex-col gap-m.2 text-m.2 text-fg-2">
-    <div class="flex flex-col gap-s.4 text-fg-1 font-bold">
+  <section class="flex flex-col gap-m.2 text-m.2 text-fg-3">
+    <div class="flex flex-col gap-s.4 text-fg-2 font-bold">
       <h3 class="text-s">{props.title}</h3>
       {props.subtitle && <div style="max-width: 24ch">{props.subtitle}</div>}
     </div>
@@ -78,8 +78,8 @@ const Main: Component<IMainProps> = (props) => {
           <Headerbar />
 
           <div class="flex flex-col items-center text-center gap-m.2 font-semibold">
-            <ProjectLogo logo={findLogo(getDatabase(), entry())} innerClass="text-fg-0" />
-            <div class="text-fg-2 size-i-full">
+            <ProjectLogo logo={findLogo(getDatabase(), entry())} innerClass="text-fg-1" />
+            <div class="text-fg-3 size-i-full">
               <Show when={proj().term} fallback="Ongoing project" keyed>
                 {(term) => (<>
                   {term.start.toLocaleDateString('en', { day: "2-digit", month: "short", year: "numeric" })}
@@ -91,7 +91,7 @@ const Main: Component<IMainProps> = (props) => {
               </Show>
             </div>
             <VeryBigTitle>{proj()?.name}</VeryBigTitle>
-            <div class="text-(s+s.2) text-fg-1">{proj().description}</div>
+            <div class="text-(s+s.2) text-fg-2">{proj().description}</div>
           </div>
 
           <div class="relative">
@@ -140,7 +140,7 @@ const Main: Component<IMainProps> = (props) => {
                   header={<ProjectLogo logo={() => (element.icon)} />}
                   title={
                     <div class="flex flex-col gap-s.4">
-                      <div class="font-semibold text-fg-1">{element.type}:</div>
+                      <div class="font-semibold text-fg-2">{element.type}:</div>
                       <div class="font-bold text-m.2">{element.title}</div>
                     </div>
                   }

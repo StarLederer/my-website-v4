@@ -4,7 +4,7 @@
 }
 
 .normal {
-  @apply text-fg-3;
+  @apply text-fg-4;
   transform: var(--translate) scale(calc((1 - var(--depth)) * 0.6 + 0.4)) rotate(calc(var(--random) * 45deg));
   filter: blur(calc(var(--depth) * 0.2 * 1rem));
 }

@@ -6,7 +6,7 @@ import navigate from "~/tree/navigate";
 
 const Main: ParentComponent = (props) => {
   return (
-    <footer class="bg-def2 text-fg-2 font-semibold">
+    <footer class="bg-def2 text-fg-3 font-semibold">
       {props.children}
       <Container class="p-b-m.2">
         <div class="flex gap-s flex-wrap justify-between items-center">

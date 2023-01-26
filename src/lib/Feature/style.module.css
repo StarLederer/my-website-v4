@@ -29,11 +29,11 @@
       opacity: 0;
 
       & .name {
-        @apply font-bold text-fg-0;
+        @apply font-bold text-fg-1;
       }
 
       & p {
-        @apply font-semibold text-fg-0;
+        @apply font-semibold text-fg-1;
         max-width: 50%;
       }
     }

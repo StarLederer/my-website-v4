@@ -60,7 +60,7 @@ const Main: Component = () => {
                   <span>{detail.title}:</span>
                 </div>
                 <div class="flex justify-between items-center gap-s">
-                  <span class="text-fg-2">{detail.data}</span>
+                  <span class="text-fg-3">{detail.data}</span>
                   <div class="flex gap-s.4">
                   <Button style="ghost" onClick={() => navigator.clipboard.writeText(detail.data)}>
                     <div class="i-mdi-clipboard-outline" />

@@ -62,10 +62,10 @@ const Main: Component = () => {
             <div class="relative flex flex-col gap-s items-center text-center font-semibold">
               <div class="text-m.2">
                 Hello, I'm
-                <h1 class="font-extrabold text-fg-0">Star Lederer</h1>
+                <h1 class="font-extrabold text-fg-1">Star Lederer</h1>
               </div>
               <p class="text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
-              <div class="flex bg-srf justify-center items-center gap-s p-s rounded-m.2">
+              <div class="flex bg-srf justify-center items-center gap-s p-s rounded-m.2 text-s2">
                 <span>I'm loking for a job</span>
                 <Button style="solid" onClick={() => navigate("/portfolio/all")} >See portfolio <div class="i-mdi-book-open" /></Button>
               </div>

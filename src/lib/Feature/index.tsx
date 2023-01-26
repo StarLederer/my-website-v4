@@ -70,13 +70,13 @@ const Main: ComposableComponent<
 
   const Info: Component = () => (
     <div class={`${styles.info} ${props.infoClass}`}>
-      <ProjectLogo class="p-s.4 bg-srf" innerClass="text-fg-3" logo={findLogo(props.database, props.entry)} />
+      <ProjectLogo class="p-s.4 bg-srf" innerClass="text-fg-4" logo={findLogo(props.database, props.entry)} />
 
       <div class="font-bold">{project().name}</div>
       {/* <a class="font-bold" href={project().homepageUrl}>{project().name}</a> */}
 
       <Show when={parents().length > 0}>
-        <div class="text-fg-2">for</div>
+        <div class="text-fg-3">for</div>
         <div class="font-bold">{props.database[parents()[0]].project.name}</div>
       </Show>
     </div>

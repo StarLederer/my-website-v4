@@ -8,7 +8,7 @@ const Main: ParentComponent<{
   return (
     <Container class="flex flex-col gap-s.4">
       <h2 class="font-extrabold text-m.2">{props.title}</h2>
-      <p class="text-fg-2 m-be-m.2">{props.subtitle}</p>
+      <p class="text-fg-3 m-be-m.2">{props.subtitle}</p>
     </Container>
   )
 };
