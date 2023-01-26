@@ -11,7 +11,7 @@ const Main: Component<{
   const [color, setColor] = createSignal('');
 
   createEffect(() => {
-    const colors = getSLA(theme.windblade.colors['int'].base);
+    const colors = getSLA(theme.windblade.colors['accent'].base);
     let sla;
     switch (themeStore.scheme()) {
       case "light":
