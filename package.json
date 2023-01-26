@@ -10,12 +10,12 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.37",
-    "@unocss/core": "^0.47.6",
-    "@unocss/preset-icons": "^0.47.6",
-    "@unocss/transformer-directives": "^0.47.6",
-    "@unocss/vite": "^0.47.6",
-    "postcss": "^8.4.20",
-    "postcss-preset-env": "^7.8.3",
+    "@unocss/core": "^0.49.0",
+    "@unocss/preset-icons": "^0.49.0",
+    "@unocss/transformer-directives": "^0.49.0",
+    "@unocss/vite": "^0.49.0",
+    "postcss": "^8.4.21",
+    "postcss-preset-env": "^8.0.0",
     "typescript": "^4.9.4",
     "unocss": "^0.45.30",
     "vite": "^3.2.5",
@@ -25,6 +25,7 @@
     "@iconify-json/simple-icons": "^1.1.40",
     "solid-headless": "^0.13.0",
     "solid-js": "^1.6.5",
+    "unocss-preset-mini-variants": "^0.49.0",
     "vite-plugin-favicons-inject": "^2.1.0"
   }
 }

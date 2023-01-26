@@ -4,6 +4,7 @@ import favicon from 'vite-plugin-favicons-inject';
 import solidPlugin from 'vite-plugin-solid';
 import unocss from '@unocss/vite';
 import presetIcons from '@unocss/preset-icons';
+import presetVariants from 'unocss-preset-mini-variants';
 import transformerDirective from '@unocss/transformer-directives'
 import unocssPresetWindblade from "./submodules/windblade/unocss";
 
@@ -34,6 +35,7 @@ export default defineConfig({
     solidPlugin(),
     unocss({
       presets: [
+        presetVariants(),
         presetIcons(),
         unocssPresetWindblade(),
       ],
