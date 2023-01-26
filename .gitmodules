@@ -1,5 +1,5 @@
 [submodule "submodules/unocss-preset"]
-	path = submodules/unocss-preset
+	path = submodules/windblade
 	url = https://github.com/StarLederer/windblade.git
 [submodule "submodules/ui"]
 	path = submodules/ui
