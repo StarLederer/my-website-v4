@@ -5,7 +5,7 @@ import solidPlugin from 'vite-plugin-solid';
 import unocss from '@unocss/vite';
 import presetIcons from '@unocss/preset-icons';
 import transformerDirective from '@unocss/transformer-directives'
-import unocssPresetWindblade from "./submodules/unocss-preset/unocss";
+import unocssPresetWindblade from "./submodules/windblade/unocss";
 
 export default defineConfig({
   base: "./",
