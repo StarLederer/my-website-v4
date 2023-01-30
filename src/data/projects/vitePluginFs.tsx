@@ -72,7 +72,10 @@ const project: Project = {
       name: "Update to Vite 4",
       description: "The plugin requires maintenance.",
       homepageUrl: "https://github.com/StarLederer/vite-plugin-fs/issues/12",
-      priority: true,
+      term: {
+        start: new Date(2023, 1, 29),
+        end: new Date(2023, 1, 29),
+      }
     }
   ],
 };
