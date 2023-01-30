@@ -6,7 +6,6 @@ import mediacrate from "./projects/mediacrate";
 import metashine from "./projects/metashine";
 import mwgsl from "./projects/mwgsl";
 import townsAndHeroes from "./projects/townsAndHeroes";
-import urpVolumetricLight from "./projects/urpVolumetricLight";
 import vitePluginFs from "./projects/vitePluginFs";
 import windblade from "./projects/windblade";
 
