@@ -4,3 +4,6 @@
 [submodule "submodules/ui"]
 	path = submodules/ui
 	url = https://github.com/StarLederer/solid-components.git
+[submodule "submodules/me"]
+	path = submodules/me
+	url = https://github.com/StarLederer/me.git
