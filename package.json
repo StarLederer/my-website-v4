@@ -16,6 +16,7 @@
     "@unocss/vite": "^0.49.0",
     "postcss": "^8.4.21",
     "postcss-preset-env": "^8.0.0",
+    "ts-extras": "^0.11.0",
     "typescript": "^4.9.4",
     "unocss": "^0.45.30",
     "vite": "^3.2.5",
