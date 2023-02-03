@@ -22,7 +22,7 @@ const getOss = (): Database => {
     interfacer,
     metashine,
     mwgsl,
-    // windblade,
+    windblade,
     // mediacrate
   ]);
   return oss;

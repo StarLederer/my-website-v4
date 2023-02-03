@@ -39,6 +39,14 @@ const project: Project = {
       },
     ],
   },
+  children: [
+    {
+      name: "Documentation",
+      description: "Create a documentation workflow, document utilities that differ from Tailwind counterparts and build a frontend.",
+      homepageUrl: "https://github.com/StarLederer/windblade/issues/2",
+      priority: true,
+    }
+  ],
 };
 
 export default project;
