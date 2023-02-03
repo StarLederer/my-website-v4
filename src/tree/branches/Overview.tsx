@@ -2,6 +2,7 @@ import { Component, For } from "solid-js";
 import { Route } from "@/ui/router";
 import Button from "@/ui/primitives/Button";
 import Link from "@/ui/primitives/Button/Link";
+import me from "@/me/src";
 import Container from "~/lib/Container";
 import BigTitle from "~/lib/BigTitle";
 import Feature from "~/lib/Feature";
@@ -20,7 +21,7 @@ const OverviewFeature: Component<{
   <Feature
     database={getDatabase()}
     entry={props.entry}
-    class={props.hero ? "size-b-l.4" : ""}
+    class={props.hero ? "size-b-l.4" : "size-b-l.2"}
     compose={({ Root, Card, Overlay, OverlayInfo, Info }) => (
       <Root>
         <Card>
@@ -62,11 +63,11 @@ const Main: Component = () => {
             <div class="relative flex flex-col gap-s items-center text-center font-semibold">
               <div class="text-m.2">
                 Hello, I'm
-                <h1 class="font-extrabold text-fg-1">Star Lederer</h1>
+                <h1 class="font-extrabold text-fg-1">{me.name}</h1>
               </div>
-              <p class="text-(s+s.2)">Innovator, open-source enthusiast, UX/DX perfectionist.</p>
+              <p class="text-(s+s.2)">{me.subtitle}</p>
               <div class="flex bg-srf justify-center items-center gap-s p-s rounded-m.2 text-s2">
-                <span>I'm loking for a job</span>
+                <span>I'm looking for a job</span>
                 <Button style="solid" onClick={() => navigate("/portfolio/all")} >See portfolio <div class="i-mdi-book-open" /></Button>
               </div>
               {/* <div class="flex bg-srf items-center gap-s p-s rounded-m.2">
@@ -100,7 +101,7 @@ const Main: Component = () => {
             <OverviewFeature entry={featuredEntries().first} hero />
             <div class="gap-s grid grid-fit-cols-l.2">
               <For each={featuredEntries().others}>
-                {(entry) => <OverviewFeature entry={entry} />}
+                {(entry) => <OverviewFeature entry={entry}/>}
               </For>
             </div>
           </Container>
