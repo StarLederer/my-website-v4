@@ -1,12 +1,10 @@
-import { Component, createSignal, For } from "solid-js";
+import { Component, For } from "solid-js";
 import {
   Popover,
   PopoverButton,
   PopoverPanel,
-  Transition,
-  Menu,
-  MenuItem,
 } from 'solid-headless';
+import me from "@/me/src";
 import router from "@/ui/router";
 import Button from "@/ui/primitives/Button";
 import ButtonBase from "@/ui/primitives/Button/Base";
@@ -14,7 +12,6 @@ import Headerbar from "~/lib/Headerbar";
 import themeStore from "~/stores/themeStore";
 import Link from "@/ui/primitives/Button/Link";
 import navigate from "~/tree/navigate";
-import styles from "./styles.module.css";
 
 type IMainProps = {
 };
