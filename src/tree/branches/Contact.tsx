@@ -1,15 +1,7 @@
 import { Component, For, JSX } from "solid-js";
-import { Route } from "@/ui/router";
 import Button from "@/ui/primitives/Button";
 import Link from "@/ui/primitives/Button/Link";
 import Container from "~/lib/Container";
-import BigTitle from "~/lib/BigTitle";
-import Feature from "~/lib/Feature";
-import NextUp from "~/components/NextUp";
-import Projects from "~/components/Projects";
-import { Entry, getOss as getDatabase } from "~/data";
-import Headerbar from "~/components/MainHeaderbar";
-import Footer from "~/components/Footer";
 import Starfield from "~/components/Starfield";
 
 const Main: Component = () => {

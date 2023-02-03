@@ -1,4 +1,4 @@
-import { Component, createEffect, createSignal } from "solid-js";
+import { Component } from "solid-js";
 import themeStore from "./stores/themeStore";
 import Root from "./tree/Root";
 
