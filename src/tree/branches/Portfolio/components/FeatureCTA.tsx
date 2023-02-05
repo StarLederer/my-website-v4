@@ -1,6 +1,6 @@
 import { Component } from "solid-js";
-import Button, { IButtonStyle } from "@/ui/primitives/Button";
-import router from "@/ui/router";
+import Button, { IButtonStyle } from "@ui/primitives/Button";
+import router from "@ui/router";
 import { Entry } from "~/data";
 import navigate from "~/tree/navigate";
 

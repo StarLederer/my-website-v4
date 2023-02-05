@@ -1,9 +1,9 @@
 import { Component, For, Show } from "solid-js";
-import Button from "@/ui/primitives/Button";
-import Link from "@/ui/primitives/Button/Link";
+import Button from "@ui/primitives/Button";
+import Link from "@ui/primitives/Button/Link";
 import { getOss as getDatabase, Project } from "~/data"
 import ProjectLogo from "~/lib/ProjectLogo";
-import { IButtonStyle } from "@/ui/primitives/Button";
+import { IButtonStyle } from "@ui/primitives/Button";
 import Card from "~/lib/Card";
 
 const Child: Component<{

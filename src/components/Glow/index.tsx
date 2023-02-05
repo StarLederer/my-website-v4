@@ -1,5 +1,5 @@
-import { theme } from "@/windblade/unocss";
-import { getSLA } from "@/windblade/unocss/core";
+import { theme } from "windblade/index";
+import { getSLA } from "windblade/core";
 import { JSX, Component, For, createSignal, createEffect } from "solid-js";
 import styles from "./style.module.css";
 import themeStore from "~/stores/themeStore";

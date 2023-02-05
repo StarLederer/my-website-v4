@@ -1,9 +1,9 @@
 import { Component, For } from "solid-js";
-import Button from "@/ui/primitives/Button";
+import Button from "@ui/primitives/Button";
 import { Entry, findLogo, getOss as getDatabase } from "~/data";
 import ProjectLogo from "~/lib/ProjectLogo";
 import ProjectParents from "~/lib/ProjectParents";
-import Link from "@/ui/primitives/Button/Link";
+import Link from "@ui/primitives/Button/Link";
 import Card from "~/lib/Card";
 
 const Post: Component<{ entry: Entry }> = (props) => (

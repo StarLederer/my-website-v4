@@ -4,13 +4,13 @@ import {
   PopoverButton,
   PopoverPanel,
 } from 'solid-headless';
-import me from "@/me/src";
-import router from "@/ui/router";
-import Button from "@/ui/primitives/Button";
-import ButtonBase from "@/ui/primitives/Button/Base";
+import me from "@me/src";
+import router from "@ui/router";
+import Button from "@ui/primitives/Button";
+import ButtonBase from "@ui/primitives/Button/Base";
 import Headerbar from "~/lib/Headerbar";
 import themeStore from "~/stores/themeStore";
-import Link from "@/ui/primitives/Button/Link";
+import Link from "@ui/primitives/Button/Link";
 import navigate from "~/tree/navigate";
 
 type IMainProps = {

@@ -1,4 +1,4 @@
-import Button from "@/ui/primitives/Button";
+import Button from "@ui/primitives/Button";
 import { Component } from "solid-js";
 import Starfield from "~/components/Starfield";
 import Container from "~/lib/Container";

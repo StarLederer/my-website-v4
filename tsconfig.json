@@ -5,8 +5,14 @@
     "module": "ESNext",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./submodules/*"
+      "windblade/*": [
+        "./submodules/windblade/unocss/src/*"
+      ],
+      "@ui/*": [
+        "./submodules/ui/*"
+      ],
+      "@me/*": [
+        "./submodules/me/*"
       ],
       "~/*": [
         "./src/*"
@@ -17,7 +23,9 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "types": ["vite/client"],
+    "types": [
+      "vite/client"
+    ],
     "noEmit": true,
     "isolatedModules": true
   }

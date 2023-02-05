@@ -1,6 +1,6 @@
 import { Component, For } from "solid-js";
-import me from "@/me/src";
-import Button from "@/ui/primitives/Button";
+import me from "@me/src";
+import Button from "@ui/primitives/Button";
 import Container from "~/lib/Container";
 import Headerbar from "~/components/MainHeaderbar";
 import BigTitle from "~/lib/BigTitle";

@@ -1,7 +1,7 @@
 import { ParentComponent } from "solid-js";
-import me from "@/me/src";
-import Link from "@/ui/primitives/Button/Link";
-import Button from "@/ui/primitives/Button";
+import me from "@me/src";
+import Link from "@ui/primitives/Button/Link";
+import Button from "@ui/primitives/Button";
 import Container from "~/lib/Container";
 import navigate from "~/tree/navigate";
 

@@ -1,5 +1,5 @@
 import { Component, For, onCleanup, onMount } from "solid-js";
-import router, { Route } from "@/ui/router";
+import router, { Route } from "@ui/router";
 import Portfolio from "./branches/Portfolio";
 import Project from "./branches/Portfolio/branches/Project";
 import AboutMe from "./branches/AboutMe";

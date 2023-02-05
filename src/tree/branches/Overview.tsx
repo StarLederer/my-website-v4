@@ -1,8 +1,8 @@
 import { Component, For } from "solid-js";
-import { Route } from "@/ui/router";
-import Button from "@/ui/primitives/Button";
-import Link from "@/ui/primitives/Button/Link";
-import me from "@/me/src";
+import { Route } from "@ui/router";
+import Button from "@ui/primitives/Button";
+import Link from "@ui/primitives/Button/Link";
+import me from "@me/src";
 import Container from "~/lib/Container";
 import BigTitle from "~/lib/BigTitle";
 import Feature from "~/lib/Feature";

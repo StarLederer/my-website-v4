@@ -1,7 +1,7 @@
 import { Component, For, ParentComponent, Show } from "solid-js";
-import router, { Route } from "@/ui/router";
-import Button, { IButtonStyle } from "@/ui/primitives/Button";
-import Link from "@/ui/primitives/Button/Link";
+import router, { Route } from "@ui/router";
+import Button, { IButtonStyle } from "@ui/primitives/Button";
+import Link from "@ui/primitives/Button/Link";
 import { Entry, findLogo, getCorporate as getDatabase } from "~/data";
 import ProjectLogo from "~/lib/ProjectLogo";
 import Headerbar from "~/components/MainHeaderbar";

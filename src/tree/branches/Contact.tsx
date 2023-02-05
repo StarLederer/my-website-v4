@@ -1,6 +1,6 @@
 import { Component, For, JSX } from "solid-js";
-import Button from "@/ui/primitives/Button";
-import Link from "@/ui/primitives/Button/Link";
+import Button from "@ui/primitives/Button";
+import Link from "@ui/primitives/Button/Link";
 import Container from "~/lib/Container";
 import Starfield from "~/components/Starfield";
 

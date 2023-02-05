@@ -1,7 +1,7 @@
 import { ParentComponent, For, Show, JSX, Component } from "solid-js";
-import Button from "@/ui/primitives/Button";
-import router from "@/ui/router";
-import Link from "@/ui/primitives/Button/Link";
+import Button from "@ui/primitives/Button";
+import router from "@ui/router";
+import Link from "@ui/primitives/Button/Link";
 import { Database, Entry, findLogo } from "~/data";
 import styles from "./style.module.css";
 import ProjectLogo from "../ProjectLogo";

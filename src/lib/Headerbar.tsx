@@ -1,6 +1,6 @@
 import { ParentComponent, Show } from "solid-js";
-import me from "@/me/src";
-import Button from "@/ui/primitives/Button";
+import me from "@me/src";
+import Button from "@ui/primitives/Button";
 import navigate from "~/tree/navigate";
 
 const Main: ParentComponent = (props) => {

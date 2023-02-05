@@ -1,4 +1,4 @@
-import type { Variant } from "@/windblade/unocss/core";
+import type { Variant } from "windblade/core";
 import { createSignal, createMemo, createRoot } from "solid-js";
 
 function main() {

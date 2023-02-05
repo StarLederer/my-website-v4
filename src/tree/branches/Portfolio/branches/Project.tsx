@@ -1,6 +1,6 @@
 import { Component, For, ParentComponent, Show } from "solid-js";
 import { Story, Entry, findLogo, getCorporate as getDatabase, EntryID } from "~/data";
-import Link from "@/ui/primitives/Button/Link";
+import Link from "@ui/primitives/Button/Link";
 import Container from "~/lib/Container";
 import ProjectLogo from "~/lib/ProjectLogo";
 import Feature from "~/lib/Feature";
@@ -11,7 +11,7 @@ import Footer from "~/components/Footer";
 import FeatureCTA from "../components/FeatureCTA";
 import Glow from "~/components/Glow";
 import Starfield from "~/components/Starfield";
-import Button from "@/ui/primitives/Button";
+import Button from "@ui/primitives/Button";
 import navigate from "~/tree/navigate";
 import PreFooterCTA from "../components/PreFooterCTA";
 
