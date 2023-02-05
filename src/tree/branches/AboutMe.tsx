@@ -4,7 +4,7 @@ import Button from "@ui/primitives/Button";
 import Container from "~/lib/Container";
 import Headerbar from "~/components/MainHeaderbar";
 import BigTitle from "~/lib/BigTitle";
-import navigate from "../navigate";
+import navigate from "~/lib/rotuer";
 import Starfield from "~/components/Starfield";
 import Footer from "~/components/Footer";
 

@@ -3,7 +3,7 @@ import me from "@me/src";
 import Link from "@ui/primitives/Button/Link";
 import Button from "@ui/primitives/Button";
 import Container from "~/lib/Container";
-import navigate from "~/tree/navigate";
+import navigate from "~/lib/rotuer";
 
 const Main: ParentComponent = (props) => {
   return (

@@ -12,7 +12,7 @@ import { Entry, getOss as getDatabase } from "~/data";
 import Headerbar from "~/components/MainHeaderbar";
 import Footer from "~/components/Footer";
 import Starfield from "~/components/Starfield";
-import navigate from "../navigate";
+import navigate from "~/lib/rotuer";
 
 const OverviewFeature: Component<{
   entry: Entry;

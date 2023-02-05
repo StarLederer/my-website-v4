@@ -2,7 +2,7 @@ import Button from "@ui/primitives/Button";
 import { Component } from "solid-js";
 import Starfield from "~/components/Starfield";
 import Container from "~/lib/Container";
-import navigate from "~/tree/navigate";
+import navigate from "~/lib/rotuer";
 
 const Main: Component<{
   emoji: string;
