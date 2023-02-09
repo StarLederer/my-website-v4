@@ -27,7 +27,7 @@ const Main: Component<{
       l: lca.l,
       c: lca.c,
       h: props.hue,
-      alpha: lca.a
+      alpha: 0.2
     })));
   });
 
