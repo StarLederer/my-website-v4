@@ -5,6 +5,7 @@ import Link from "@ui/primitives/Button/Link";
 import { Database, Entry, findLogo } from "~/data";
 import styles from "./style.module.css";
 import ProjectLogo from "../ProjectLogo";
+import themeStore from "~/stores/themeStore";
 
 type ComposableComponent<E = {}, P = {}> = Component<P & {
   compose?: (elements: E) => JSX.Element
@@ -44,7 +45,7 @@ const Main: ComposableComponent<
 
   const Card: ParentComponent = (elementProps) => (
     <div
-      class={`${styles.imageBg} ${props.class} ${project().features?.[0].bgColor === undefined && "bg-surface-2"} ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
+      class={`${styles.imageBg} ${props.class} ${themeStore.scheme() === "light" ? "scheme-dark-270" : "scheme-dark-90"} bg-normal ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
       style={project().features?.[0].bgColor ? `background-color: ${project().features?.[0].bgColor};` : ""}
     >
       {/* Image */}
