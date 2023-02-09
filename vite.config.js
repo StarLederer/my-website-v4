@@ -56,6 +56,15 @@ export default defineConfig({
                 { dark: { l: 0.2, c: 0.02 } },
               ],
             },
+            'accent': {
+              base: { dark: { l: 0.84, c: 0.16 }, light: { l: 0.6 } },
+              on: [
+                { dark: { l: 0.1, c: 0.2 }, light: { l: 10 } },
+                { dark: { l: 0.2, c: 0.2 }, light: { l: 20 } },
+                { dark: { l: 0.4, c: 0.2 }, light: { l: 40 } },
+                { dark: { l: 0.4, c: 0.2 }, light: { l: 40 } },
+              ],
+            },
           },
         },
       },
@@ -84,8 +93,8 @@ export default defineConfig({
         }
       ],
       rules: [
-        ['highlight', { filter: 'brightness(1.2)' }],
-        ['highlight+', { filter: 'brightness(1.4)' }]
+        ['highlight', { filter: 'brightness(1.1) saturate(0.8)' }],
+        ['highlight+', { filter: 'brightness(1.2) saturate(0.6)' }]
       ],
     }),
   ],
