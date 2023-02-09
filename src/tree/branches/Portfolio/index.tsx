@@ -65,7 +65,7 @@ const Main: Component = () => {
 
   return (
     <div >
-      <header class="relative bg-srf overflow-hidden">
+      <header class="relative bg-surface overflow-hidden">
         <Starfield />
 
         <Container class="relative flex flex-col gap-m.4 p-b-m.6 p-bs-s">

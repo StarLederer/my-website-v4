@@ -14,7 +14,7 @@ const Skills: Component<{
   <div class="flex flex-wrap gap-s.4">
     <For each={props.skills}>
       {(skill) => (
-        <div class="bg-srf bprder bprder-color-srf p-s rounded-full font-semibold items-center justify-center" style="white-space: nowrap;">
+        <div class="bg-surface bprder bprder-color-surface p-s rounded-full font-semibold items-center justify-center" style="white-space: nowrap;">
           {skill}
         </div>
       )}
@@ -35,7 +35,7 @@ const Main: Component = (props) => (
             <img src="https://avatars.githubusercontent.com/u/55361752" alt="Picture of me" class="relative rounded-full size-i-m" style="z-index: 1;" />
             <div class="flex flex-col items-start gap-m.2">
               <div class="relative">
-                <div class="absolute bg-def3 inset-(-m.2) rounded-full" style="filter: blur(2rem)" />
+                <div class="absolute bg-normal-3 inset-(-m.2) rounded-full" style="filter: blur(2rem)" />
                 <div class="relative flex flex-col gap-s.4 font-semibold">
                   <h1 class="font-extrabold text-m.2">{me.name}</h1>
                   <p class="text-fg-2 text-(s+s.2)">{me.subtitle}</p>

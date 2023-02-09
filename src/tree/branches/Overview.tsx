@@ -59,18 +59,18 @@ const Main: Component = () => {
 
         <header class="p-s p-b-l.2 flex justify-center">
           <div class="relative">
-            <div class="absolute inset-(-m.4) bg-def3 rounded-full" style="filter: blur(2rem);" />
+            <div class="absolute inset-(-m.4) bg-normal-3 rounded-full" style="filter: blur(2rem);" />
             <div class="relative flex flex-col gap-s items-center text-center font-semibold">
               <div class="text-m.2">
                 Hello, I'm
                 <h1 class="font-extrabold text-fg-1">{me.name}</h1>
               </div>
               <p class="text-(s+s.2)">{me.subtitle}</p>
-              <div class="flex bg-srf justify-center items-center gap-s p-s rounded-m.2 text-s2">
+              <div class="flex bg-surface justify-center items-center gap-s p-s rounded-m.2 text-s2">
                 <span>I'm looking for a job</span>
                 <Button style="solid" onClick={() => navigate("/portfolio/all")} >See portfolio <div class="i-mdi-book-open" /></Button>
               </div>
-              {/* <div class="flex bg-srf items-center gap-s p-s rounded-m.2">
+              {/* <div class="flex bg-surface items-center gap-s p-s rounded-m.2">
               <div>Want to support?</div>
               <Button style="solid">Sponsor <div class="i-mdi-plus-circle-multiple" /></Button>
             </div> */}

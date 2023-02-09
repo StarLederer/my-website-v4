@@ -7,7 +7,7 @@ const Main: Component<{
   actions: JSX.Element;
   texts: JSX.Element[];
 }> = (props) => (
-  <div class="bg-srf border border-color-srf p-m.2 rounded-m.2 flex flex-col items-start justify-between gap-m.2">
+  <div class="bg-surface border border-color-surface p-m.2 rounded-m.2 flex flex-col items-start justify-between gap-m.2">
     {props.header}
 
     <div class="flex flex-col gap-s size-i-full">

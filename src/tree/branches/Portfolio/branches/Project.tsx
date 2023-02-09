@@ -70,7 +70,7 @@ const Main: Component<IMainProps> = (props) => {
 
   return (
     <>
-      <header class="relative bg-srf overflow-hidden">
+      <header class="relative bg-surface overflow-hidden">
         <Starfield />
 
         <Container class="relative flex flex-col gap-m.8 p-b-s p-be-m.6">
@@ -159,7 +159,7 @@ const Main: Component<IMainProps> = (props) => {
         {/* <HR2 /> */}
       </Container>
 
-      <div class="bg-def2">
+      <div class="bg-normal-2">
         <Container class="p-b-m.6">
           <Section
             title="More projects"

@@ -7,6 +7,7 @@ specifiers:
   '@unocss/preset-icons': ^0.49.0
   '@unocss/transformer-directives': ^0.49.0
   '@unocss/vite': ^0.49.0
+  culori: ^2.0.4
   postcss: ^8.4.21
   postcss-preset-env: ^8.0.0
   solid-headless: ^0.13.0
@@ -21,6 +22,7 @@ specifiers:
 
 dependencies:
   '@iconify-json/simple-icons': 1.1.40
+  culori: 2.0.4
   solid-headless: 0.13.0_solid-js@1.6.5
   solid-js: 1.6.5
   unocss-preset-mini-variants: 0.49.0
@@ -1331,6 +1333,11 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+
+  /culori/2.0.4:
+    resolution: {integrity: sha512-wYQcZOH8auJWxpGOyXxcftYOzsIlfphlohE9/Obo3nNoylyVYduzX+BZgsZXK/OPPAK/4cc5MKiCrIUITkF5ug==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}

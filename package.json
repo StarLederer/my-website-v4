@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@iconify-json/simple-icons": "^1.1.40",
+    "culori": "^2.0.4",
     "solid-headless": "^0.13.0",
     "solid-js": "^1.6.5",
     "unocss-preset-mini-variants": "^0.49.0",

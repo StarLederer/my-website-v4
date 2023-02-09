@@ -44,7 +44,7 @@ const Main: ComposableComponent<
 
   const Card: ParentComponent = (elementProps) => (
     <div
-      class={`${styles.imageBg} ${props.class} ${project().features?.[0].bgColor === undefined && "bg-srf2"} ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
+      class={`${styles.imageBg} ${props.class} ${project().features?.[0].bgColor === undefined && "bg-surface-2"} ${!props.noCover && project().features?.[0].imageFit == "cover" && styles.isFull}`}
       style={project().features?.[0].bgColor ? `background-color: ${project().features?.[0].bgColor};` : ""}
     >
       {/* Image */}
@@ -70,7 +70,7 @@ const Main: ComposableComponent<
 
   const Info: Component = () => (
     <div class={`${styles.info} ${props.infoClass}`}>
-      <ProjectLogo class="p-s.4 bg-srf" innerClass="text-fg-4" logo={findLogo(props.database, props.entry)} />
+      <ProjectLogo class="p-s.4 bg-surface" innerClass="text-fg-3" logo={findLogo(props.database, props.entry)} />
 
       <div class="font-bold">{project().name}</div>
       {/* <a class="font-bold" href={project().homepageUrl}>{project().name}</a> */}

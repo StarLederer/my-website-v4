@@ -10,7 +10,7 @@
 }
 
 .twinkles {
-  @apply text-int;
+  @apply text-accent;
   animation: 10s twinkle infinite ease;
   opacity: 0;
 }

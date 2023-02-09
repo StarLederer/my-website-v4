@@ -1,8 +1,9 @@
 import { theme } from "windblade/index";
-import { getSLA } from "windblade/core";
+import { getLCA } from "windblade/core";
 import { JSX, Component, For, createSignal, createEffect } from "solid-js";
 import styles from "./style.module.css";
 import themeStore from "~/stores/themeStore";
+import { formatHex8, clampChroma } from "culori";
 
 const Main: Component<{
   hue: number;
@@ -11,17 +12,23 @@ const Main: Component<{
   const [color, setColor] = createSignal('');
 
   createEffect(() => {
-    const colors = getSLA(theme.windblade.colors['accent'].base);
-    let sla;
+    const colors = getLCA(theme.windblade.colors['accent'].base);
+    let lca;
     switch (themeStore.scheme()) {
       case "light":
-        sla = colors.light;
+        lca = colors.light;
         break;
       default:
-        sla = colors.dark;
+        lca = colors.dark;
     }
 
-    setColor(`hsla(${props.hue}, ${sla.s}%, ${sla.l}%, 20%)`)
+    setColor(formatHex8(clampChroma({
+      mode: 'oklch',
+      l: lca.l,
+      c: lca.c,
+      h: props.hue,
+      alpha: lca.a
+    })));
   });
 
   return (

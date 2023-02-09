@@ -32,11 +32,11 @@ const Main: Component = () => {
     ];
 
   return (
-    <div class="absolute inset-0 bg-def3 flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-normal-3 flex items-center overflow-hidden">
       <Starfield />
 
       <Container class="flex justify-center p-b-s">
-        <div class="relative bg-blur border border-color-srf bg-srf p-m.2 p-b-m.4 rounded-m.2 flex flex-col gap-m.4 overflow-auto">
+        <div class="relative bg-blur border border-color-surface bg-surface p-m.2 p-b-m.4 rounded-m.2 flex flex-col gap-m.4 overflow-auto">
           <h1 class="flex flex-col gap-s.4 font-bold">
             <span>Contact</span>
             <span class="font-extrabold text-m.2">Star Lederer</span>
@@ -45,7 +45,7 @@ const Main: Component = () => {
           <div class="grid gap-s items-center font-semibold" style="grid-template-columns: auto auto;">
             <For each={details}>
               {(detail) => (<>
-                <div class="flex gap-s items-center bg-srf p-s rounded-full">
+                <div class="flex gap-s items-center bg-surface p-s rounded-full">
                   <div class="">
                   {detail.icon}
                   </div>

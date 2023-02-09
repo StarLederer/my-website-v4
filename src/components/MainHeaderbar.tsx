@@ -59,7 +59,7 @@ const Main: Component<IMainProps> = (props) => {
               <div class="i-mdi-menu" />
             </ButtonBase>
             <div class="absolute inset-bs-full inset-ie-0 transition" style={`opacity: ${isOpen() ? 1 : 0}; pointer-events: ${isOpen() ? 'all' : 'none'}`}>
-              <PopoverPanel class="bg-blur bg-srf border border-color-srf p-s.2 m-b-s.2 rounded-s flex flex-col size-i-max-content gap-s.2">
+              <PopoverPanel class="bg-blur bg-surface border border-color-surface p-s.2 m-b-s.2 rounded-s flex flex-col size-i-max-content gap-s.2">
                 <For each={links}>
                   {(link) => {
                     const isCurrent = () => router.route().current.startsWith(link.url);
