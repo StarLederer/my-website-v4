@@ -7,7 +7,7 @@ const Main: Component<{
   hue: number;
   class?: string;
 }> = (props) => {
-  const [culori] = createResource(async () => (await import("https://cdn.skypack.dev/culori")));
+  const [culori] = createResource(async () => (await import("culori")));
 
   const color = () => {
     if (culori.loading || culori.error) return "transaprent";

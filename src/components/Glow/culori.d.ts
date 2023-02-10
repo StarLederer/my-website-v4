@@ -1,1 +1,1 @@
-declare module "https://cdn.skypack.dev/culori";
+declare module "culori";
