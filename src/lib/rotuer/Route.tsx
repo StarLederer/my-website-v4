@@ -7,7 +7,7 @@ const Main: ParentComponent<RouteProps & {
   <Route
     path={props.path}
     strict={props.strict}
-    class="overflow-auto"
+    class={props.scroll ? "overflow-auto" : "overflow-hidden"}
     enter="animate-in"
     leave="animate-out"
   >

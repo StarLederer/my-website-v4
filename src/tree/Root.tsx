@@ -32,13 +32,13 @@ const Main: Component = () => {
           )}
         </For>
       </Route>
-      <Route path="/contact">
+      <Route path="/contact" scroll>
         <Contact />
       </Route>
       <Route path="/overview" scroll>
         <Overview />
       </Route>
-      <Route path="/about-me">
+      <Route path="/about-me" scroll>
         <AboutMe />
       </Route>
     </>
