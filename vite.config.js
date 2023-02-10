@@ -57,7 +57,7 @@ export default defineConfig({
               ],
             },
             'accent': {
-              base: { dark: { l: 0.84, c: 0.16 }, light: { l: 0.6 } },
+              base: { dark: { l: 0.84, c: 0.16 }, light: { l: 0.6, c: 0.2 } },
             },
           },
         },
