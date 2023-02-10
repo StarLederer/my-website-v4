@@ -13,7 +13,7 @@ const project: Project = {
   name: "Interfacer",
   description: "A GUI that helps non-developers execute shell commands and use git",
   sourceCodeUrl: "https://github.com/StarLederer/interfacer",
-  homepageUrl: "https://github.com/StarLederer/interfacer",
+  homepageUrl: "https://github.com/StarLederer/interfacer#readme",
   logo: logo,
   features: [
     {

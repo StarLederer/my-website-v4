@@ -5,7 +5,7 @@ import banner from "./featureImages/windblade.svg";
 const project: Project = {
   name: "Windblade",
   description: "Unofficial cutting-edge version of Tailwind",
-  homepageUrl: "https://github.com/StarLederer/windblade",
+  homepageUrl: "https://starlederer.github.io/windblade",
   sourceCodeUrl: "https://github.com/StarLederer/windblade",
   logo: logo,
   features: [
