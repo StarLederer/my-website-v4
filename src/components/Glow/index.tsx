@@ -1,18 +1,19 @@
-import { theme } from "windblade/index";
 import { getLCA } from "windblade/core";
-import { JSX, Component, For, createSignal, createEffect } from "solid-js";
+import { Component, createResource } from "solid-js";
 import styles from "./style.module.css";
 import themeStore from "~/stores/themeStore";
-import { formatHex8, clampChroma } from "culori";
 
 const Main: Component<{
   hue: number;
   class?: string;
 }> = (props) => {
-  const [color, setColor] = createSignal('');
+  const [culori] = createResource(async () => (await import("https://cdn.skypack.dev/culori")));
 
-  createEffect(() => {
-    const colors = getLCA(theme.windblade.colors['accent'].base);
+  const color = () => {
+    if (culori.loading || culori.error) return "transaprent";
+    const { formatHex8, clampChroma } = culori();
+
+    const colors = getLCA({ dark: { l: 0.84, c: 0.16 }, light: { l: 0.6, c: 0.2 } });
     let lca;
     switch (themeStore.scheme()) {
       case "light":
@@ -22,17 +23,17 @@ const Main: Component<{
         lca = colors.dark;
     }
 
-    setColor(formatHex8(clampChroma({
+    return formatHex8(clampChroma({
       mode: 'oklch',
       l: lca.l,
       c: lca.c,
       h: props.hue,
       alpha: 0.2
-    })));
-  });
+    }));
+  };
 
   return (
-    <div class={props.class} style={`--color: ${color()}`}>
+    <div class={`transition ${props.class}`} style={`--color: ${color()};`}>
       <div class={styles.sphere} />
     </div>
   );
