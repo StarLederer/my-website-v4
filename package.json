@@ -27,6 +27,7 @@
     "culori": "^2.0.4",
     "solid-headless": "^0.13.0",
     "solid-js": "^1.6.5",
+    "ts-deepmerge": "^6.0.2",
     "unocss-preset-mini-variants": "^0.49.0",
     "vite-plugin-favicons-inject": "^2.1.0"
   }

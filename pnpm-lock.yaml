@@ -12,6 +12,7 @@ specifiers:
   postcss-preset-env: ^8.0.0
   solid-headless: ^0.13.0
   solid-js: ^1.6.5
+  ts-deepmerge: ^6.0.2
   ts-extras: ^0.11.0
   typescript: ^4.9.4
   unocss: ^0.45.30
@@ -25,6 +26,7 @@ dependencies:
   culori: 2.0.4
   solid-headless: 0.13.0_solid-js@1.6.5
   solid-js: 1.6.5
+  ts-deepmerge: 6.0.2
   unocss-preset-mini-variants: 0.49.0
   vite-plugin-favicons-inject: 2.1.0
 
@@ -2677,6 +2679,11 @@ packages:
     resolution: {integrity: sha512-eM+pCBxXO/njtF7vdFsHuqb+ElbxqtI4r5EAvk6grfAFyJ6IvWlSkfZ5T9ozC6xWw3Fj1fGoSmrl0gUs46JVIw==}
     engines: {node: '>=6'}
     dev: true
+
+  /ts-deepmerge/6.0.2:
+    resolution: {integrity: sha512-/GPCwZfJylLU3i00vFwHa36YYvKY9F1Es/VhRESre7betW2cvxF05qwAD0vGlsKl93FEAB+2DoN/QrUw9VyBcg==}
+    engines: {node: '>=14.13.1'}
+    dev: false
 
   /ts-extras/0.11.0:
     resolution: {integrity: sha512-yrbnkpcvtPiPXVFrvHHqNnCxUplqabQGX+UL5s+hpdaBeochNvixdFpgX/0MsPT99uwWv87wivdLCNezLy5OIA==}
