@@ -76,14 +76,14 @@ const Main: Component = () => {
             <ProjectLogo logo={findLogo(getDatabase(), featuredEntries().first)} />
             <span class="text-fg-2 size-i-full">{featuredEntries().first.project.name}</span>
             <VeryBigTitle>Proudest creation</VeryBigTitle>
-            <span class="font-semibold text-(s+s.2) text-fg-3">{featuredEntries().first.project.description}</span>
+            <span class="font-semibold text-$($s+$s.2) text-fg-3">{featuredEntries().first.project.description}</span>
           </div>
 
           {/* Feature and buttons */}
           <div class="flex flex-col gap-m.2 items-center">
             {/* Glow and feature */}
             <div class="relative size-i-full">
-              <Glow hue={featuredEntries().first.project.story?.hue ?? 45} class="absolute inset-(-m.2)" />
+              <Glow hue={featuredEntries().first.project.story?.hue ?? 45} class="absolute -inset-m.2" />
               <Feature database={getDatabase()} entry={featuredEntries().first} noInfo noOverlay />
             </div>
 

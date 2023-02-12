@@ -35,11 +35,11 @@ const Main: Component = (props) => (
             <img src="https://avatars.githubusercontent.com/u/55361752" alt="Picture of me" class="relative rounded-full size-i-m" style="z-index: 1;" />
             <div class="flex flex-col items-start gap-m.2">
               <div class="relative">
-                <div class="absolute bg-normal-3 inset-(-m.2) rounded-full" style="filter: blur(2rem)" />
+                <div class="absolute bg-normal-3 -inset-m.2 rounded-full" style="filter: blur(2rem)" />
                 <div class="relative flex flex-col gap-s.4 font-semibold">
                   <h1 class="font-extrabold text-m.2">{me.name}</h1>
-                  <p class="text-fg-2 text-(s+s.2)">{me.subtitle}</p>
-                  <p class="text-fg-3 leading-(s+s.2)" style="max-width: 48ch">I love exploring abstract ideas and discovering new things. I see opportunities in everything and use them to improve the world.</p>
+                  <p class="text-fg-2 text-$($s+$s.2)">{me.subtitle}</p>
+                  <p class="text-fg-3 leading-$($s+$s.2)" style="max-width: 48ch">I love exploring abstract ideas and discovering new things. I see opportunities in everything and use them to improve the world.</p>
                 </div>
               </div>
               <div class="relative">

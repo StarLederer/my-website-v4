@@ -16,7 +16,7 @@ const Child: Component<{
       {/* Main */}
       <Card
         header={<ProjectLogo logo={props.data.logo} />}
-        title={<h4 class="font-bold text-fg-1 text-(s+s.2)">{props.data.name}</h4>}
+        title={<h4 class="font-bold text-fg-1 text-$($s+$s.2)">{props.data.name}</h4>}
         texts={[
           props.data.description,
           // `Open source: ${props.data.closedSource ? "no" : "yes"}`,

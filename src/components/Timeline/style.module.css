@@ -1,0 +1,53 @@
+.dates,
+.bg,
+.contentTrack {
+  display: grid;
+  grid-auto-flow: column;
+  @apply grid-auto-cols-m.4;
+}
+
+.dates{
+  @apply size-b-m.4;
+}
+
+.bg {
+  position: absolute;
+  height: 100%;
+}
+
+.contentTrack {
+  @apply m-bs-s.4;
+
+  &:last-child {
+    @apply m-b-s.4;
+  }
+}
+
+
+.cell {
+  border-inline-start: 1px dashed;
+  @apply
+    m-bs-m.4
+    border-color-fg-5;
+
+  &:last-child {
+    border-inline-end-width: 1px;
+    border-inline-end-style: dashed;
+  }
+}
+
+.project {
+  @apply
+    bg-normal-2
+    text-fg-2
+    rounded-s
+    m-i-s.4
+    p-s
+    flex
+    flex-col
+    items-start
+    justify-center
+    transition
+    border
+    border-color-fg-6;
+}

@@ -69,7 +69,7 @@ const Main: Component<IMainProps> = (props) => {
                         onClick={() => { if (!isCurrent()) navigate(link.url) }}
                       >
                         <span style="white-space: nowrap;">{link.title}</span>
-                        <div class="absolute inset-be-(s.5-(s.2/2)) size-i-s.2 size-b-s.2 rounded-full transition" style={`background: currentColor; opacity: ${isCurrent() ? 1 : 0};`} />
+                        <div class="absolute inset-be-$($s.5-($s.2/2)) size-i-s.2 size-b-s.2 rounded-full transition" style={`background: currentColor; opacity: ${isCurrent() ? 1 : 0};`} />
                       </Button>
                     );
                   }}

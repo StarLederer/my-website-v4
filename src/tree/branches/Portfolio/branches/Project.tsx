@@ -90,11 +90,11 @@ const Main: Component<IMainProps> = (props) => {
               </Show>
             </div>
             <VeryBigTitle>{proj()?.name}</VeryBigTitle>
-            <div class="text-(s+s.2) text-fg-2">{proj().description}</div>
+            <div class="text-$($s+$s.2) text-fg-2">{proj().description}</div>
           </div>
 
           <div class="relative">
-            <Glow hue={proj().story?.hue ?? 45} class="absolute inset-(-m.2)" />
+            <Glow hue={proj().story?.hue ?? 45} class="absolute -inset-m.2" />
             <Feature database={getDatabase()} entry={entry()} noOverlay noInfo noCover cardClass="min-size-b-0" />
           </div>
         </Container>
@@ -105,7 +105,7 @@ const Main: Component<IMainProps> = (props) => {
           <div class="flex flex-col gap-s">
             <For each={story().description}>
               {(element) => (
-                <p class="leading-(s+s.4)">{element}</p>
+                <p class="leading-$($s+$s.4)">{element}</p>
               )}
             </For>
           </div>

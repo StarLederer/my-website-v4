@@ -5,8 +5,10 @@ specifiers:
   '@iconify-json/simple-icons': ^1.1.40
   '@unocss/core': ^0.49.0
   '@unocss/preset-icons': ^0.49.0
+  '@unocss/preset-mini': ^0.49.4
   '@unocss/transformer-directives': ^0.49.0
   '@unocss/vite': ^0.49.0
+  better-color-tools: ^0.10.0
   culori: ^2.0.4
   postcss: ^8.4.21
   postcss-preset-env: ^8.0.0
@@ -34,8 +36,10 @@ devDependencies:
   '@iconify-json/mdi': 1.1.37
   '@unocss/core': 0.49.0
   '@unocss/preset-icons': 0.49.0
+  '@unocss/preset-mini': 0.49.4
   '@unocss/transformer-directives': 0.49.0
   '@unocss/vite': 0.49.0_vite@3.2.5
+  better-color-tools: 0.10.0
   postcss: 8.4.21
   postcss-preset-env: 8.0.0_postcss@8.4.21
   ts-extras: 0.11.0
@@ -831,6 +835,9 @@ packages:
   /@unocss/core/0.49.0:
     resolution: {integrity: sha512-rnA93tsfqMJ8isrmgh8w48oJZryWdtLQD2JpERwW95xi4WdWWIFozR9xMwvd6xOGOaBhbttak6xdsv4nmCFvIA==}
 
+  /@unocss/core/0.49.4:
+    resolution: {integrity: sha512-1RNV+KBgRo0uuaa5Etwc5cfxkdhJelIXRFz3LeXBOU4dIrTzBAMr352M+oZ/nnkbnAROGf3icTE0UcmSaCA2RQ==}
+
   /@unocss/inspector/0.45.30:
     resolution: {integrity: sha512-kcI+jN2h6xRBzQUdc3HfOCAbvi0gFVjPONJBDU+NeDnDXAp/TshK/Z3K/2JzWqSR9HWcYA/Bswk8bMRBa7lkmQ==}
     dependencies:
@@ -877,11 +884,10 @@ packages:
       '@unocss/core': 0.45.30
     dev: true
 
-  /@unocss/preset-mini/0.49.0:
-    resolution: {integrity: sha512-9e76LStJt98aYRm5ZPwOJOnWxf748EKzNh7U8p+f6El8CQLd5Xvez41j8+27FwWgD1/k44mUTVk4+LajF7SaNw==}
+  /@unocss/preset-mini/0.49.4:
+    resolution: {integrity: sha512-GsVKBRi2BbliEic7SfdY2AG03T+wEOd3yZOY+NtwEJ9Z/hwb1zRQHiizDuyth0E3FCHVfZkk9C0/WXy8Z1Qj3g==}
     dependencies:
-      '@unocss/core': 0.49.0
-    dev: false
+      '@unocss/core': 0.49.4
 
   /@unocss/preset-tagify/0.45.30:
     resolution: {integrity: sha512-CxENmffmb24PHiZIVtK6aDzfKcJiF9ydZIgjGWxfNZlgxDwEmT4Stkq9ncDLo67XR5dljS0HOmNWB7BON1Uu/g==}
@@ -1137,6 +1143,10 @@ packages:
   /base64-js/1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: false
+
+  /better-color-tools/0.10.0:
+    resolution: {integrity: sha512-Val/kKqyKK43YYZuMxSPG2lgJL7P7kTm/wSrxPz3y/wXAbx4zrTTBR4A8pi10H9KFPCNcNyLBGsgZPIrnP9Yig==}
+    dev: true
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -2732,7 +2742,7 @@ packages:
     dependencies:
       '@unocss/config': 0.49.0
       '@unocss/core': 0.49.0
-      '@unocss/preset-mini': 0.49.0
+      '@unocss/preset-mini': 0.49.4
     dev: false
 
   /unocss/0.45.30_vite@3.2.5:
